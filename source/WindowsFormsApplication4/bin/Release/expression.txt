@@ -1,0 +1,1887 @@
+program#void#functionList 
+program#int#functionList 
+program#float#functionList 
+program#char#functionList 
+program#long#functionList 
+program#short#functionList 
+program#double#functionList 
+program#@#functionList 
+program#@#$ 
+functionList#void#Fun functionList 
+functionList#int#Fun functionList 
+functionList#float#Fun functionList 
+functionList#char#Fun functionList 
+functionList#long#Fun functionList 
+functionList#short#Fun functionList 
+functionList#double#Fun functionList 
+functionList#@#$ 
+Fun#int#type #Fun.type=type.type# fun_head #Fun.name=fun_head.name;Fun.params=fun_head.params;declareFunction(Fun.type,Fun.name,Fun.params)# FunRest 
+Fun#float#type #Fun.type=type.type# fun_head #Fun.name=fun_head.name;Fun.params=fun_head.params;declareFunction(Fun.type,Fun.name,Fun.params)# FunRest 
+Fun#char#type #Fun.type=type.type# fun_head #Fun.name=fun_head.name;Fun.params=fun_head.params;declareFunction(Fun.type,Fun.name,Fun.params)# FunRest 
+Fun#long#type #Fun.type=type.type# fun_head #Fun.name=fun_head.name;Fun.params=fun_head.params;declareFunction(Fun.type,Fun.name,Fun.params)# FunRest 
+Fun#short#type #Fun.type=type.type# fun_head #Fun.name=fun_head.name;Fun.params=fun_head.params;declareFunction(Fun.type,Fun.name,Fun.params)# FunRest 
+Fun#double#type #Fun.type=type.type# fun_head #Fun.name=fun_head.name;Fun.params=fun_head.params;declareFunction(Fun.type,Fun.name,Fun.params)# FunRest 
+Fun#void#void #Fun.type="void"# fun_head #Fun.name=fun_head.name;Fun.params=fun_head.params;declareFunction(Fun.type,Fun.name,Fun.params)# FunRest 
+Fun#@#SYNCH 
+FunRest#{#Body 
+FunRest#;#; 
+FunRest#void#SYNCH 
+FunRest#int#SYNCH 
+FunRest#float#SYNCH 
+FunRest#char#SYNCH 
+FunRest#long#SYNCH 
+FunRest#short#SYNCH 
+FunRest#double#SYNCH 
+FunRest#@#SYNCH 
+type#int#int #type.type="int"# 
+type#float#float #type.type="float"# 
+type#char#char #type.type="char"# 
+type#long#long type1 #type.type=type1.type# 
+type#short#short type2 #type.type=type2.type# 
+type#double#double #type.type="double"# 
+type#IDN#SYNCH 
+type#*#SYNCH 
+type1#int#int #type1.type="longint"# 
+type1#double#double #type1.type="longdouble"# 
+type1#IDN#$ #type1.type="long"# 
+type1#*#$ #type1.type="long"# 
+type2#int#int #type2.type="shortint"# 
+type2#IDN#$ #type2.type="shortint"# 
+type2#*#$ #type2.type="shortint"# 
+pointer#*#* pointer1 
+pointer#IDN#SYNCH 
+pointer1#*#* pointer1 
+pointer1#IDN#$ 
+var#*#pointer IDN varRest 
+var#IDN#IDN varRest 
+var#,#SYNCH 
+var#)#SYNCH 
+varRest#[#[ ] varRest 
+varRest#,#$ 
+varRest#)#$ 
+store_type#auto#auto 
+store_type#register#register 
+store_type#const#const 
+store_type#extern#extern 
+store_type#typedef#typedef 
+store_type#int#$ 
+store_type#float#$ 
+store_type#char#$ 
+store_type#long#$ 
+store_type#short#$ 
+store_type#double#$ 
+fun_head#*#pointer IDN ( paramsDec 
+fun_head#IDN#IDN #fun_head.name=IDN.name# ( paramsDec #fun_head.params=paramsDec.params# 
+fun_head#;#SYNCH 
+fun_head#{#SYNCH 
+paramsDec#)#) #paramsDec.params=""# 
+paramsDec#void#void ) #paramsDec.params=""# 
+paramsDec#int#param_list ) #paramsDec.params=param_list.params# 
+paramsDec#float#param_list ) #paramsDec.params=param_list.params# 
+paramsDec#char#param_list ) #paramsDec.params=param_list.params# 
+paramsDec#long#param_list ) #paramsDec.params=param_list.params# 
+paramsDec#short#param_list ) #paramsDec.params=param_list.params# 
+paramsDec#double#param_list ) #paramsDec.params=param_list.params# 
+paramsDec#;#SYNCH 
+paramsDec#{#SYNCH 
+param_list#int#param #params_list.params=param.params# new_param 
+param_list#float#param #params_list.params=param.params# new_param 
+param_list#char#param #params_list.params=param.params# new_param 
+param_list#long#param #params_list.params=param.params# new_param 
+param_list#short#param #params_list.params=param.params# new_param 
+param_list#double#param #params_list.params=param.params# new_param 
+param_list#)#SYNCH 
+param#int#type #param.type=type.type# var #param.name=var.name# 
+param#float#type #param.type=type.type# var #param.name=var.name# 
+param#char#type #param.type=type.type# var #param.name=var.name# 
+param#long#type #param.type=type.type# var #param.name=var.name# 
+param#short#type #param.type=type.type# var #param.name=var.name# 
+param#double#type #param.type=type.type# var #param.name=var.name# 
+param#,#SYNCH 
+param#)#SYNCH 
+new_param#,#, param new_param 
+new_param#)#$ 
+Body#{#{ dec_Stmt_List } 
+Body#void#SYNCH 
+Body#int#SYNCH 
+Body#float#SYNCH 
+Body#char#SYNCH 
+Body#long#SYNCH 
+Body#short#SYNCH 
+Body#double#SYNCH 
+Body#@#SYNCH 
+dec_Stmt_List#{#stmt_List 
+dec_Stmt_List#;#stmt_List 
+dec_Stmt_List#(#stmt_List 
+dec_Stmt_List#IDN#stmt_List 
+dec_Stmt_List#CONST_FLOAT#stmt_List 
+dec_Stmt_List#CONST_CHAR#stmt_List 
+dec_Stmt_List#CONST_CHAR*#stmt_List 
+dec_Stmt_List#CONST_INT16#stmt_List 
+dec_Stmt_List#CONST_INT8#stmt_List 
+dec_Stmt_List#CONST_INT10#stmt_List 
+dec_Stmt_List#++#stmt_List 
+dec_Stmt_List#--#stmt_List 
+dec_Stmt_List#!#stmt_List 
+dec_Stmt_List#if#stmt_List 
+dec_Stmt_List#switch#stmt_List 
+dec_Stmt_List#while#stmt_List 
+dec_Stmt_List#for#stmt_List 
+dec_Stmt_List#do#stmt_List 
+dec_Stmt_List#continue#stmt_List 
+dec_Stmt_List#break#stmt_List 
+dec_Stmt_List#return#stmt_List 
+dec_Stmt_List#}#stmt_List 
+dec_Stmt_List#auto#dec new_dec_Stmt stmt_List 
+dec_Stmt_List#register#dec new_dec_Stmt stmt_List 
+dec_Stmt_List#const#dec new_dec_Stmt stmt_List 
+dec_Stmt_List#extern#dec new_dec_Stmt stmt_List 
+dec_Stmt_List#typedef#dec new_dec_Stmt stmt_List 
+dec_Stmt_List#int#dec new_dec_Stmt stmt_List 
+dec_Stmt_List#float#dec new_dec_Stmt stmt_List 
+dec_Stmt_List#char#dec new_dec_Stmt stmt_List 
+dec_Stmt_List#long#dec new_dec_Stmt stmt_List 
+dec_Stmt_List#short#dec new_dec_Stmt stmt_List 
+dec_Stmt_List#double#dec new_dec_Stmt stmt_List 
+stmt_List#}#$ 
+stmt_List#case#$ 
+stmt_List#{#$ 
+stmt_List#;#$ 
+stmt_List#(#$ 
+stmt_List#IDN#$ 
+stmt_List#CONST_FLOAT#$ 
+stmt_List#CONST_CHAR#$ 
+stmt_List#CONST_CHAR*#$ 
+stmt_List#CONST_INT16#$ 
+stmt_List#CONST_INT8#$ 
+stmt_List#CONST_INT10#$ 
+stmt_List#++#$ 
+stmt_List#--#$ 
+stmt_List#!#$ 
+stmt_List#if#$ 
+stmt_List#switch#$ 
+stmt_List#while#$ 
+stmt_List#for#$ 
+stmt_List#do#$ 
+stmt_List#continue#$ 
+stmt_List#break#$ 
+stmt_List#return#$ 
+stmt_List#else#$ 
+stmt_List#default#$ 
+stmt_List#{#STMT new_STMT 
+stmt_List#;#STMT new_STMT 
+stmt_List#(#STMT new_STMT 
+stmt_List#IDN#STMT new_STMT 
+stmt_List#CONST_FLOAT#STMT new_STMT 
+stmt_List#CONST_CHAR#STMT new_STMT 
+stmt_List#CONST_CHAR*#STMT new_STMT 
+stmt_List#CONST_INT16#STMT new_STMT 
+stmt_List#CONST_INT8#STMT new_STMT 
+stmt_List#CONST_INT10#STMT new_STMT 
+stmt_List#++#STMT new_STMT 
+stmt_List#--#STMT new_STMT 
+stmt_List#!#STMT new_STMT 
+stmt_List#if#STMT new_STMT 
+stmt_List#switch#STMT new_STMT 
+stmt_List#while#STMT new_STMT 
+stmt_List#for#STMT new_STMT 
+stmt_List#do#STMT new_STMT 
+stmt_List#continue#STMT new_STMT 
+stmt_List#break#STMT new_STMT 
+stmt_List#return#STMT new_STMT 
+new_dec_Stmt#auto#dec new_dec_Stmt 
+new_dec_Stmt#register#dec new_dec_Stmt 
+new_dec_Stmt#const#dec new_dec_Stmt 
+new_dec_Stmt#extern#dec new_dec_Stmt 
+new_dec_Stmt#typedef#dec new_dec_Stmt 
+new_dec_Stmt#int#dec new_dec_Stmt 
+new_dec_Stmt#float#dec new_dec_Stmt 
+new_dec_Stmt#char#dec new_dec_Stmt 
+new_dec_Stmt#long#dec new_dec_Stmt 
+new_dec_Stmt#short#dec new_dec_Stmt 
+new_dec_Stmt#double#dec new_dec_Stmt 
+new_dec_Stmt#{#$ 
+new_dec_Stmt#;#$ 
+new_dec_Stmt#(#$ 
+new_dec_Stmt#IDN#$ 
+new_dec_Stmt#CONST_FLOAT#$ 
+new_dec_Stmt#CONST_CHAR#$ 
+new_dec_Stmt#CONST_CHAR*#$ 
+new_dec_Stmt#CONST_INT16#$ 
+new_dec_Stmt#CONST_INT8#$ 
+new_dec_Stmt#CONST_INT10#$ 
+new_dec_Stmt#++#$ 
+new_dec_Stmt#--#$ 
+new_dec_Stmt#!#$ 
+new_dec_Stmt#if#$ 
+new_dec_Stmt#switch#$ 
+new_dec_Stmt#while#$ 
+new_dec_Stmt#for#$ 
+new_dec_Stmt#do#$ 
+new_dec_Stmt#continue#$ 
+new_dec_Stmt#break#$ 
+new_dec_Stmt#return#$ 
+new_dec_Stmt#}#$ 
+dec#auto#store_type type init_var new_dec ; 
+dec#register#store_type type init_var new_dec ; 
+dec#const#store_type type init_var new_dec ; 
+dec#extern#store_type type init_var new_dec ; 
+dec#typedef#store_type type init_var new_dec ; 
+dec#int#store_type type init_var new_dec ; 
+dec#float#store_type type init_var new_dec ; 
+dec#char#store_type type init_var new_dec ; 
+dec#long#store_type type init_var new_dec ; 
+dec#short#store_type type init_var new_dec ; 
+dec#double#store_type type init_var new_dec ; 
+dec#}#SYNCH 
+dec#{#SYNCH 
+dec#;#SYNCH 
+dec#(#SYNCH 
+dec#IDN#SYNCH 
+dec#CONST_FLOAT#SYNCH 
+dec#CONST_CHAR#SYNCH 
+dec#CONST_CHAR*#SYNCH 
+dec#CONST_INT16#SYNCH 
+dec#CONST_INT8#SYNCH 
+dec#CONST_INT10#SYNCH 
+dec#++#SYNCH 
+dec#--#SYNCH 
+dec#!#SYNCH 
+dec#if#SYNCH 
+dec#switch#SYNCH 
+dec#while#SYNCH 
+dec#for#SYNCH 
+dec#do#SYNCH 
+dec#continue#SYNCH 
+dec#break#SYNCH 
+dec#return#SYNCH 
+new_dec#,#, init_var new_dec 
+new_dec#;#$ 
+init_var#IDN#commom_dec special_dec 
+init_var#*#commom_dec special_dec 
+init_var#,#SYNCH 
+init_var#auto#SYNCH 
+init_var#register#SYNCH 
+init_var#const#SYNCH 
+init_var#extern#SYNCH 
+init_var#typedef#SYNCH 
+init_var#int#SYNCH 
+init_var#float#SYNCH 
+init_var#char#SYNCH 
+init_var#long#SYNCH 
+init_var#short#SYNCH 
+init_var#double#SYNCH 
+init_var#}#SYNCH 
+init_var#{#SYNCH 
+init_var#;#SYNCH 
+init_var#(#SYNCH 
+init_var#CONST_FLOAT#SYNCH 
+init_var#CONST_CHAR#SYNCH 
+init_var#CONST_CHAR*#SYNCH 
+init_var#CONST_INT16#SYNCH 
+init_var#CONST_INT8#SYNCH 
+init_var#CONST_INT10#SYNCH 
+init_var#++#SYNCH 
+init_var#--#SYNCH 
+init_var#!#SYNCH 
+init_var#if#SYNCH 
+init_var#switch#SYNCH 
+init_var#while#SYNCH 
+init_var#for#SYNCH 
+init_var#do#SYNCH 
+init_var#continue#SYNCH 
+init_var#break#SYNCH 
+init_var#return#SYNCH 
+commom_dec#*#pointer IDN 
+commom_dec#IDN#IDN 
+commom_dec#[#SYNCH 
+commom_dec#=#SYNCH 
+commom_dec#*=#SYNCH 
+commom_dec#/=#SYNCH 
+commom_dec#%=#SYNCH 
+commom_dec#+=#SYNCH 
+commom_dec#-=#SYNCH 
+commom_dec#<<=#SYNCH 
+commom_dec#>>=#SYNCH 
+commom_dec#|=#SYNCH 
+commom_dec#&=#SYNCH 
+commom_dec#^=#SYNCH 
+commom_dec#,#SYNCH 
+commom_dec#auto#SYNCH 
+commom_dec#register#SYNCH 
+commom_dec#const#SYNCH 
+commom_dec#extern#SYNCH 
+commom_dec#typedef#SYNCH 
+commom_dec#int#SYNCH 
+commom_dec#float#SYNCH 
+commom_dec#char#SYNCH 
+commom_dec#long#SYNCH 
+commom_dec#short#SYNCH 
+commom_dec#double#SYNCH 
+commom_dec#}#SYNCH 
+commom_dec#{#SYNCH 
+commom_dec#;#SYNCH 
+commom_dec#(#SYNCH 
+commom_dec#CONST_FLOAT#SYNCH 
+commom_dec#CONST_CHAR#SYNCH 
+commom_dec#CONST_CHAR*#SYNCH 
+commom_dec#CONST_INT16#SYNCH 
+commom_dec#CONST_INT8#SYNCH 
+commom_dec#CONST_INT10#SYNCH 
+commom_dec#++#SYNCH 
+commom_dec#--#SYNCH 
+commom_dec#!#SYNCH 
+commom_dec#if#SYNCH 
+commom_dec#switch#SYNCH 
+commom_dec#while#SYNCH 
+commom_dec#for#SYNCH 
+commom_dec#do#SYNCH 
+commom_dec#continue#SYNCH 
+commom_dec#break#SYNCH 
+commom_dec#return#SYNCH 
+special_dec#=#Assign_OP var_init 
+special_dec#*=#Assign_OP var_init 
+special_dec#/=#Assign_OP var_init 
+special_dec#%=#Assign_OP var_init 
+special_dec#+=#Assign_OP var_init 
+special_dec#-=#Assign_OP var_init 
+special_dec#<<=#Assign_OP var_init 
+special_dec#>>=#Assign_OP var_init 
+special_dec#|=#Assign_OP var_init 
+special_dec#&=#Assign_OP var_init 
+special_dec#^=#Assign_OP var_init 
+special_dec#[#[ group_dec 
+special_dec#,#$ 
+special_dec#auto#$ 
+special_dec#register#$ 
+special_dec#const#$ 
+special_dec#extern#$ 
+special_dec#typedef#$ 
+special_dec#int#$ 
+special_dec#float#$ 
+special_dec#char#$ 
+special_dec#long#$ 
+special_dec#short#$ 
+special_dec#double#$ 
+special_dec#}#$ 
+special_dec#{#$ 
+special_dec#;#$ 
+special_dec#(#$ 
+special_dec#IDN#$ 
+special_dec#CONST_FLOAT#$ 
+special_dec#CONST_CHAR#$ 
+special_dec#CONST_CHAR*#$ 
+special_dec#CONST_INT16#$ 
+special_dec#CONST_INT8#$ 
+special_dec#CONST_INT10#$ 
+special_dec#++#$ 
+special_dec#--#$ 
+special_dec#!#$ 
+special_dec#if#$ 
+special_dec#switch#$ 
+special_dec#while#$ 
+special_dec#for#$ 
+special_dec#do#$ 
+special_dec#continue#$ 
+special_dec#break#$ 
+special_dec#return#$ 
+var_init#(#assigment_Expr 
+var_init#IDN#assigment_Expr 
+var_init#CONST_FLOAT#assigment_Expr 
+var_init#CONST_CHAR#assigment_Expr 
+var_init#CONST_CHAR*#assigment_Expr 
+var_init#CONST_INT16#assigment_Expr 
+var_init#CONST_INT8#assigment_Expr 
+var_init#CONST_INT10#assigment_Expr 
+var_init#++#assigment_Expr 
+var_init#--#assigment_Expr 
+var_init#!#assigment_Expr 
+var_init#,#SYNCH 
+var_init#auto#SYNCH 
+var_init#register#SYNCH 
+var_init#const#SYNCH 
+var_init#extern#SYNCH 
+var_init#typedef#SYNCH 
+var_init#int#SYNCH 
+var_init#float#SYNCH 
+var_init#char#SYNCH 
+var_init#long#SYNCH 
+var_init#short#SYNCH 
+var_init#double#SYNCH 
+var_init#}#SYNCH 
+var_init#{#SYNCH 
+var_init#;#SYNCH 
+var_init#if#SYNCH 
+var_init#switch#SYNCH 
+var_init#while#SYNCH 
+var_init#for#SYNCH 
+var_init#do#SYNCH 
+var_init#continue#SYNCH 
+var_init#break#SYNCH 
+var_init#return#SYNCH 
+group_dec#]#] group_def 
+group_dec#CONST_INT16#CONST_INT ] group_def 
+group_dec#CONST_INT8#CONST_INT ] group_def 
+group_dec#CONST_INT10#CONST_INT ] group_def 
+group_dec#,#SYNCH 
+group_dec#auto#SYNCH 
+group_dec#register#SYNCH 
+group_dec#const#SYNCH 
+group_dec#extern#SYNCH 
+group_dec#typedef#SYNCH 
+group_dec#int#SYNCH 
+group_dec#float#SYNCH 
+group_dec#char#SYNCH 
+group_dec#long#SYNCH 
+group_dec#short#SYNCH 
+group_dec#double#SYNCH 
+group_dec#}#SYNCH 
+group_dec#{#SYNCH 
+group_dec#;#SYNCH 
+group_dec#(#SYNCH 
+group_dec#IDN#SYNCH 
+group_dec#CONST_FLOAT#SYNCH 
+group_dec#CONST_CHAR#SYNCH 
+group_dec#CONST_CHAR*#SYNCH 
+group_dec#++#SYNCH 
+group_dec#--#SYNCH 
+group_dec#!#SYNCH 
+group_dec#if#SYNCH 
+group_dec#switch#SYNCH 
+group_dec#while#SYNCH 
+group_dec#for#SYNCH 
+group_dec#do#SYNCH 
+group_dec#continue#SYNCH 
+group_dec#break#SYNCH 
+group_dec#return#SYNCH 
+group_def#[#[ group_dec 
+group_def#=#Assign_OP group_init 
+group_def#*=#Assign_OP group_init 
+group_def#/=#Assign_OP group_init 
+group_def#%=#Assign_OP group_init 
+group_def#+=#Assign_OP group_init 
+group_def#-=#Assign_OP group_init 
+group_def#<<=#Assign_OP group_init 
+group_def#>>=#Assign_OP group_init 
+group_def#|=#Assign_OP group_init 
+group_def#&=#Assign_OP group_init 
+group_def#^=#Assign_OP group_init 
+group_def#,#$ 
+group_def#auto#$ 
+group_def#register#$ 
+group_def#const#$ 
+group_def#extern#$ 
+group_def#typedef#$ 
+group_def#int#$ 
+group_def#float#$ 
+group_def#char#$ 
+group_def#long#$ 
+group_def#short#$ 
+group_def#double#$ 
+group_def#}#$ 
+group_def#{#$ 
+group_def#;#$ 
+group_def#(#$ 
+group_def#IDN#$ 
+group_def#CONST_FLOAT#$ 
+group_def#CONST_CHAR#$ 
+group_def#CONST_CHAR*#$ 
+group_def#CONST_INT16#$ 
+group_def#CONST_INT8#$ 
+group_def#CONST_INT10#$ 
+group_def#++#$ 
+group_def#--#$ 
+group_def#!#$ 
+group_def#if#$ 
+group_def#switch#$ 
+group_def#while#$ 
+group_def#for#$ 
+group_def#do#$ 
+group_def#continue#$ 
+group_def#break#$ 
+group_def#return#$ 
+group_init#{#{ const_explist } 
+group_init#CONST_CHAR*#CONST_CHAR* 
+group_init#,#SYNCH 
+group_init#auto#SYNCH 
+group_init#register#SYNCH 
+group_init#const#SYNCH 
+group_init#extern#SYNCH 
+group_init#typedef#SYNCH 
+group_init#int#SYNCH 
+group_init#float#SYNCH 
+group_init#char#SYNCH 
+group_init#long#SYNCH 
+group_init#short#SYNCH 
+group_init#double#SYNCH 
+group_init#}#SYNCH 
+group_init#;#SYNCH 
+group_init#(#SYNCH 
+group_init#IDN#SYNCH 
+group_init#CONST_FLOAT#SYNCH 
+group_init#CONST_CHAR#SYNCH 
+group_init#CONST_INT16#SYNCH 
+group_init#CONST_INT8#SYNCH 
+group_init#CONST_INT10#SYNCH 
+group_init#++#SYNCH 
+group_init#--#SYNCH 
+group_init#!#SYNCH 
+group_init#if#SYNCH 
+group_init#switch#SYNCH 
+group_init#while#SYNCH 
+group_init#for#SYNCH 
+group_init#do#SYNCH 
+group_init#continue#SYNCH 
+group_init#break#SYNCH 
+group_init#return#SYNCH 
+new_STMT#{#STMT new_STMT 
+new_STMT#;#STMT new_STMT 
+new_STMT#(#STMT new_STMT 
+new_STMT#IDN#STMT new_STMT 
+new_STMT#CONST_FLOAT#STMT new_STMT 
+new_STMT#CONST_CHAR#STMT new_STMT 
+new_STMT#CONST_CHAR*#STMT new_STMT 
+new_STMT#CONST_INT16#STMT new_STMT 
+new_STMT#CONST_INT8#STMT new_STMT 
+new_STMT#CONST_INT10#STMT new_STMT 
+new_STMT#++#STMT new_STMT 
+new_STMT#--#STMT new_STMT 
+new_STMT#!#STMT new_STMT 
+new_STMT#if#STMT new_STMT 
+new_STMT#switch#STMT new_STMT 
+new_STMT#while#STMT new_STMT 
+new_STMT#for#STMT new_STMT 
+new_STMT#do#STMT new_STMT 
+new_STMT#continue#STMT new_STMT 
+new_STMT#break#STMT new_STMT 
+new_STMT#return#STMT new_STMT 
+new_STMT#}#$ 
+new_STMT#case#$ 
+new_STMT#{#$ 
+new_STMT#;#$ 
+new_STMT#(#$ 
+new_STMT#IDN#$ 
+new_STMT#CONST_FLOAT#$ 
+new_STMT#CONST_CHAR#$ 
+new_STMT#CONST_CHAR*#$ 
+new_STMT#CONST_INT16#$ 
+new_STMT#CONST_INT8#$ 
+new_STMT#CONST_INT10#$ 
+new_STMT#++#$ 
+new_STMT#--#$ 
+new_STMT#!#$ 
+new_STMT#if#$ 
+new_STMT#switch#$ 
+new_STMT#while#$ 
+new_STMT#for#$ 
+new_STMT#do#$ 
+new_STMT#continue#$ 
+new_STMT#break#$ 
+new_STMT#return#$ 
+new_STMT#else#$ 
+new_STMT#default#$ 
+compound_STMT#{#{ compound_STMT1 
+compound_STMT#;#SYNCH 
+compound_STMT#(#SYNCH 
+compound_STMT#IDN#SYNCH 
+compound_STMT#CONST_FLOAT#SYNCH 
+compound_STMT#CONST_CHAR#SYNCH 
+compound_STMT#CONST_CHAR*#SYNCH 
+compound_STMT#CONST_INT16#SYNCH 
+compound_STMT#CONST_INT8#SYNCH 
+compound_STMT#CONST_INT10#SYNCH 
+compound_STMT#++#SYNCH 
+compound_STMT#--#SYNCH 
+compound_STMT#!#SYNCH 
+compound_STMT#if#SYNCH 
+compound_STMT#switch#SYNCH 
+compound_STMT#while#SYNCH 
+compound_STMT#for#SYNCH 
+compound_STMT#do#SYNCH 
+compound_STMT#continue#SYNCH 
+compound_STMT#break#SYNCH 
+compound_STMT#return#SYNCH 
+compound_STMT#}#SYNCH 
+compound_STMT#case#SYNCH 
+compound_STMT#else#SYNCH 
+compound_STMT#default#SYNCH 
+compound_STMT1#{#stmt_List } 
+compound_STMT1#;#stmt_List } 
+compound_STMT1#(#stmt_List } 
+compound_STMT1#IDN#stmt_List } 
+compound_STMT1#CONST_FLOAT#stmt_List } 
+compound_STMT1#CONST_CHAR#stmt_List } 
+compound_STMT1#CONST_CHAR*#stmt_List } 
+compound_STMT1#CONST_INT16#stmt_List } 
+compound_STMT1#CONST_INT8#stmt_List } 
+compound_STMT1#CONST_INT10#stmt_List } 
+compound_STMT1#++#stmt_List } 
+compound_STMT1#--#stmt_List } 
+compound_STMT1#!#stmt_List } 
+compound_STMT1#if#stmt_List } 
+compound_STMT1#switch#stmt_List } 
+compound_STMT1#while#stmt_List } 
+compound_STMT1#for#stmt_List } 
+compound_STMT1#do#stmt_List } 
+compound_STMT1#continue#stmt_List } 
+compound_STMT1#break#stmt_List } 
+compound_STMT1#return#stmt_List } 
+compound_STMT1#}#stmt_List } 
+compound_STMT1#}#} 
+compound_STMT1#case#SYNCH 
+compound_STMT1#else#SYNCH 
+compound_STMT1#default#SYNCH 
+const_explist#CONST_FLOAT#const_expr const_explist1 
+const_explist#CONST_CHAR#const_expr const_explist1 
+const_explist#CONST_CHAR*#const_expr const_explist1 
+const_explist#CONST_INT16#const_expr const_explist1 
+const_explist#CONST_INT8#const_expr const_explist1 
+const_explist#CONST_INT10#const_expr const_explist1 
+const_explist#}#SYNCH 
+const_explist1#,#, const_expr const_explist1 
+const_explist1#}#$ 
+const_expr#CONST_INT16#CONST_INT 
+const_expr#CONST_INT8#CONST_INT 
+const_expr#CONST_INT10#CONST_INT 
+const_expr#CONST_FLOAT#CONST_FLOAT 
+const_expr#CONST_CHAR#CONST_CHAR 
+const_expr#CONST_CHAR*#CONST_CHAR* 
+const_expr#,#SYNCH 
+const_expr#}#SYNCH 
+const_expr#++#SYNCH 
+const_expr#--#SYNCH 
+const_expr#[#SYNCH 
+const_expr#(#SYNCH 
+const_expr#%#SYNCH 
+const_expr#*#SYNCH 
+const_expr#/#SYNCH 
+const_expr#+#SYNCH 
+const_expr#-#SYNCH 
+const_expr#)#SYNCH 
+const_expr#=#SYNCH 
+const_expr#*=#SYNCH 
+const_expr#/=#SYNCH 
+const_expr#%=#SYNCH 
+const_expr#+=#SYNCH 
+const_expr#-=#SYNCH 
+const_expr#<<=#SYNCH 
+const_expr#>>=#SYNCH 
+const_expr#|=#SYNCH 
+const_expr#&=#SYNCH 
+const_expr#^=#SYNCH 
+const_expr#auto#SYNCH 
+const_expr#register#SYNCH 
+const_expr#const#SYNCH 
+const_expr#extern#SYNCH 
+const_expr#typedef#SYNCH 
+const_expr#int#SYNCH 
+const_expr#float#SYNCH 
+const_expr#char#SYNCH 
+const_expr#long#SYNCH 
+const_expr#short#SYNCH 
+const_expr#double#SYNCH 
+const_expr#{#SYNCH 
+const_expr#;#SYNCH 
+const_expr#IDN#SYNCH 
+const_expr#!#SYNCH 
+const_expr#if#SYNCH 
+const_expr#switch#SYNCH 
+const_expr#while#SYNCH 
+const_expr#for#SYNCH 
+const_expr#do#SYNCH 
+const_expr#continue#SYNCH 
+const_expr#break#SYNCH 
+const_expr#return#SYNCH 
+const_expr#case#SYNCH 
+const_expr#else#SYNCH 
+const_expr#<#SYNCH 
+const_expr#>#SYNCH 
+const_expr#<=#SYNCH 
+const_expr#>=#SYNCH 
+const_expr#==#SYNCH 
+const_expr#!=#SYNCH 
+const_expr#default#SYNCH 
+const_expr#]#SYNCH 
+STMT#{#compound_STMT 
+STMT#;#Expr_STMT 
+STMT#(#Expr_STMT 
+STMT#IDN#Expr_STMT 
+STMT#CONST_FLOAT#Expr_STMT 
+STMT#CONST_CHAR#Expr_STMT 
+STMT#CONST_CHAR*#Expr_STMT 
+STMT#CONST_INT16#Expr_STMT 
+STMT#CONST_INT8#Expr_STMT 
+STMT#CONST_INT10#Expr_STMT 
+STMT#++#Expr_STMT 
+STMT#--#Expr_STMT 
+STMT#!#Expr_STMT 
+STMT#if#selection_STMT 
+STMT#switch#selection_STMT 
+STMT#while#iteration_STMT 
+STMT#for#iteration_STMT 
+STMT#do#iteration_STMT 
+STMT#continue#jump_STMT 
+STMT#break#jump_STMT 
+STMT#return#jump_STMT 
+STMT#}#SYNCH 
+STMT#case#SYNCH 
+STMT#else#SYNCH 
+STMT#default#SYNCH 
+Expr_STMT#;#; 
+Expr_STMT#(#assigment_Expr Expr_STMT1 ; 
+Expr_STMT#IDN#assigment_Expr Expr_STMT1 ; 
+Expr_STMT#CONST_FLOAT#assigment_Expr Expr_STMT1 ; 
+Expr_STMT#CONST_CHAR#assigment_Expr Expr_STMT1 ; 
+Expr_STMT#CONST_CHAR*#assigment_Expr Expr_STMT1 ; 
+Expr_STMT#CONST_INT16#assigment_Expr Expr_STMT1 ; 
+Expr_STMT#CONST_INT8#assigment_Expr Expr_STMT1 ; 
+Expr_STMT#CONST_INT10#assigment_Expr Expr_STMT1 ; 
+Expr_STMT#++#assigment_Expr Expr_STMT1 ; 
+Expr_STMT#--#assigment_Expr Expr_STMT1 ; 
+Expr_STMT#!#assigment_Expr Expr_STMT1 ; 
+Expr_STMT#{#SYNCH 
+Expr_STMT#if#SYNCH 
+Expr_STMT#switch#SYNCH 
+Expr_STMT#while#SYNCH 
+Expr_STMT#for#SYNCH 
+Expr_STMT#do#SYNCH 
+Expr_STMT#continue#SYNCH 
+Expr_STMT#break#SYNCH 
+Expr_STMT#return#SYNCH 
+Expr_STMT#}#SYNCH 
+Expr_STMT#case#SYNCH 
+Expr_STMT#else#SYNCH 
+Expr_STMT#default#SYNCH 
+Expr_STMT1#=#Assign_OP assigment_Expr 
+Expr_STMT1#*=#Assign_OP assigment_Expr 
+Expr_STMT1#/=#Assign_OP assigment_Expr 
+Expr_STMT1#%=#Assign_OP assigment_Expr 
+Expr_STMT1#+=#Assign_OP assigment_Expr 
+Expr_STMT1#-=#Assign_OP assigment_Expr 
+Expr_STMT1#<<=#Assign_OP assigment_Expr 
+Expr_STMT1#>>=#Assign_OP assigment_Expr 
+Expr_STMT1#|=#Assign_OP assigment_Expr 
+Expr_STMT1#&=#Assign_OP assigment_Expr 
+Expr_STMT1#^=#Assign_OP assigment_Expr 
+Expr_STMT1#;#$ 
+Expr_STMT1#(#fun_return 
+fun_return#(#( func_param 
+fun_return#;#SYNCH 
+fun_return#%#SYNCH 
+fun_return#*#SYNCH 
+fun_return#/#SYNCH 
+fun_return#+#SYNCH 
+fun_return#-#SYNCH 
+fun_return#)#SYNCH 
+fun_return#=#SYNCH 
+fun_return#*=#SYNCH 
+fun_return#/=#SYNCH 
+fun_return#%=#SYNCH 
+fun_return#+=#SYNCH 
+fun_return#-=#SYNCH 
+fun_return#<<=#SYNCH 
+fun_return#>>=#SYNCH 
+fun_return#|=#SYNCH 
+fun_return#&=#SYNCH 
+fun_return#^=#SYNCH 
+fun_return#,#SYNCH 
+fun_return#auto#SYNCH 
+fun_return#register#SYNCH 
+fun_return#const#SYNCH 
+fun_return#extern#SYNCH 
+fun_return#typedef#SYNCH 
+fun_return#int#SYNCH 
+fun_return#float#SYNCH 
+fun_return#char#SYNCH 
+fun_return#long#SYNCH 
+fun_return#short#SYNCH 
+fun_return#double#SYNCH 
+fun_return#}#SYNCH 
+fun_return#{#SYNCH 
+fun_return#IDN#SYNCH 
+fun_return#CONST_FLOAT#SYNCH 
+fun_return#CONST_CHAR#SYNCH 
+fun_return#CONST_CHAR*#SYNCH 
+fun_return#CONST_INT16#SYNCH 
+fun_return#CONST_INT8#SYNCH 
+fun_return#CONST_INT10#SYNCH 
+fun_return#++#SYNCH 
+fun_return#--#SYNCH 
+fun_return#!#SYNCH 
+fun_return#if#SYNCH 
+fun_return#switch#SYNCH 
+fun_return#while#SYNCH 
+fun_return#for#SYNCH 
+fun_return#do#SYNCH 
+fun_return#continue#SYNCH 
+fun_return#break#SYNCH 
+fun_return#return#SYNCH 
+fun_return#case#SYNCH 
+fun_return#else#SYNCH 
+fun_return#<#SYNCH 
+fun_return#>#SYNCH 
+fun_return#<=#SYNCH 
+fun_return#>=#SYNCH 
+fun_return#==#SYNCH 
+fun_return#!=#SYNCH 
+fun_return#default#SYNCH 
+fun_return#]#SYNCH 
+func_param#)#) 
+func_param#(#func_param1 ) 
+func_param#IDN#func_param1 ) 
+func_param#CONST_FLOAT#func_param1 ) 
+func_param#CONST_CHAR#func_param1 ) 
+func_param#CONST_CHAR*#func_param1 ) 
+func_param#CONST_INT16#func_param1 ) 
+func_param#CONST_INT8#func_param1 ) 
+func_param#CONST_INT10#func_param1 ) 
+func_param#++#func_param1 ) 
+func_param#--#func_param1 ) 
+func_param#!#func_param1 ) 
+func_param#;#SYNCH 
+func_param#%#SYNCH 
+func_param#*#SYNCH 
+func_param#/#SYNCH 
+func_param#+#SYNCH 
+func_param#-#SYNCH 
+func_param#=#SYNCH 
+func_param#*=#SYNCH 
+func_param#/=#SYNCH 
+func_param#%=#SYNCH 
+func_param#+=#SYNCH 
+func_param#-=#SYNCH 
+func_param#<<=#SYNCH 
+func_param#>>=#SYNCH 
+func_param#|=#SYNCH 
+func_param#&=#SYNCH 
+func_param#^=#SYNCH 
+func_param#,#SYNCH 
+func_param#auto#SYNCH 
+func_param#register#SYNCH 
+func_param#const#SYNCH 
+func_param#extern#SYNCH 
+func_param#typedef#SYNCH 
+func_param#int#SYNCH 
+func_param#float#SYNCH 
+func_param#char#SYNCH 
+func_param#long#SYNCH 
+func_param#short#SYNCH 
+func_param#double#SYNCH 
+func_param#}#SYNCH 
+func_param#{#SYNCH 
+func_param#if#SYNCH 
+func_param#switch#SYNCH 
+func_param#while#SYNCH 
+func_param#for#SYNCH 
+func_param#do#SYNCH 
+func_param#continue#SYNCH 
+func_param#break#SYNCH 
+func_param#return#SYNCH 
+func_param#case#SYNCH 
+func_param#else#SYNCH 
+func_param#<#SYNCH 
+func_param#>#SYNCH 
+func_param#<=#SYNCH 
+func_param#>=#SYNCH 
+func_param#==#SYNCH 
+func_param#!=#SYNCH 
+func_param#default#SYNCH 
+func_param#]#SYNCH 
+func_param1#(#assigment_Expr func_param2 
+func_param1#IDN#assigment_Expr func_param2 
+func_param1#CONST_FLOAT#assigment_Expr func_param2 
+func_param1#CONST_CHAR#assigment_Expr func_param2 
+func_param1#CONST_CHAR*#assigment_Expr func_param2 
+func_param1#CONST_INT16#assigment_Expr func_param2 
+func_param1#CONST_INT8#assigment_Expr func_param2 
+func_param1#CONST_INT10#assigment_Expr func_param2 
+func_param1#++#assigment_Expr func_param2 
+func_param1#--#assigment_Expr func_param2 
+func_param1#!#assigment_Expr func_param2 
+func_param1#)#SYNCH 
+func_param2#,#, assigment_Expr func_param2 
+func_param2#)#$ 
+selection_STMT#if#if ( logical_Expr ) STMT selection_STMT1 
+selection_STMT#switch#switch ( mathExpr ) { switch_STMT0 switch_STMT2 } 
+selection_STMT#{#SYNCH 
+selection_STMT#;#SYNCH 
+selection_STMT#(#SYNCH 
+selection_STMT#IDN#SYNCH 
+selection_STMT#CONST_FLOAT#SYNCH 
+selection_STMT#CONST_CHAR#SYNCH 
+selection_STMT#CONST_CHAR*#SYNCH 
+selection_STMT#CONST_INT16#SYNCH 
+selection_STMT#CONST_INT8#SYNCH 
+selection_STMT#CONST_INT10#SYNCH 
+selection_STMT#++#SYNCH 
+selection_STMT#--#SYNCH 
+selection_STMT#!#SYNCH 
+selection_STMT#while#SYNCH 
+selection_STMT#for#SYNCH 
+selection_STMT#do#SYNCH 
+selection_STMT#continue#SYNCH 
+selection_STMT#break#SYNCH 
+selection_STMT#return#SYNCH 
+selection_STMT#}#SYNCH 
+selection_STMT#case#SYNCH 
+selection_STMT#else#SYNCH 
+selection_STMT#default#SYNCH 
+selection_STMT1#else#else stmt_List 
+selection_STMT1#{#$ 
+selection_STMT1#;#$ 
+selection_STMT1#(#$ 
+selection_STMT1#IDN#$ 
+selection_STMT1#CONST_FLOAT#$ 
+selection_STMT1#CONST_CHAR#$ 
+selection_STMT1#CONST_CHAR*#$ 
+selection_STMT1#CONST_INT16#$ 
+selection_STMT1#CONST_INT8#$ 
+selection_STMT1#CONST_INT10#$ 
+selection_STMT1#++#$ 
+selection_STMT1#--#$ 
+selection_STMT1#!#$ 
+selection_STMT1#if#$ 
+selection_STMT1#switch#$ 
+selection_STMT1#while#$ 
+selection_STMT1#for#$ 
+selection_STMT1#do#$ 
+selection_STMT1#continue#$ 
+selection_STMT1#break#$ 
+selection_STMT1#return#$ 
+selection_STMT1#}#$ 
+selection_STMT1#case#$ 
+selection_STMT1#else#$ 
+selection_STMT1#default#$ 
+switch_STMT0#case#case switch_STMT1 
+switch_STMT0#default#$ 
+switch_STMT0#{#$ 
+switch_STMT0#;#$ 
+switch_STMT0#(#$ 
+switch_STMT0#IDN#$ 
+switch_STMT0#CONST_FLOAT#$ 
+switch_STMT0#CONST_CHAR#$ 
+switch_STMT0#CONST_CHAR*#$ 
+switch_STMT0#CONST_INT16#$ 
+switch_STMT0#CONST_INT8#$ 
+switch_STMT0#CONST_INT10#$ 
+switch_STMT0#++#$ 
+switch_STMT0#--#$ 
+switch_STMT0#!#$ 
+switch_STMT0#if#$ 
+switch_STMT0#switch#$ 
+switch_STMT0#while#$ 
+switch_STMT0#for#$ 
+switch_STMT0#do#$ 
+switch_STMT0#continue#$ 
+switch_STMT0#break#$ 
+switch_STMT0#return#$ 
+switch_STMT0#}#$ 
+switch_STMT0#case#$ 
+switch_STMT0#else#$ 
+switch_STMT1#CONST_INT16#CONST_INT : stmt_List switch_STMT0 
+switch_STMT1#CONST_INT8#CONST_INT : stmt_List switch_STMT0 
+switch_STMT1#CONST_INT10#CONST_INT : stmt_List switch_STMT0 
+switch_STMT1#CONST_CHAR#CONST_CHAR : stmt_List switch_STMT0 
+switch_STMT1#default#SYNCH 
+switch_STMT1#{#SYNCH 
+switch_STMT1#;#SYNCH 
+switch_STMT1#(#SYNCH 
+switch_STMT1#IDN#SYNCH 
+switch_STMT1#CONST_FLOAT#SYNCH 
+switch_STMT1#CONST_CHAR*#SYNCH 
+switch_STMT1#++#SYNCH 
+switch_STMT1#--#SYNCH 
+switch_STMT1#!#SYNCH 
+switch_STMT1#if#SYNCH 
+switch_STMT1#switch#SYNCH 
+switch_STMT1#while#SYNCH 
+switch_STMT1#for#SYNCH 
+switch_STMT1#do#SYNCH 
+switch_STMT1#continue#SYNCH 
+switch_STMT1#break#SYNCH 
+switch_STMT1#return#SYNCH 
+switch_STMT1#}#SYNCH 
+switch_STMT1#case#SYNCH 
+switch_STMT1#else#SYNCH 
+switch_STMT2#default#default : stmt_List 
+switch_STMT2#}#$ 
+iteration_STMT#while#while ( logical_Expr ) stmt_List 
+iteration_STMT#for#for ( Expr_STMT logical_Expr ; assigment_Expr ) stmt_List 
+iteration_STMT#do#do { stmt_List } while ( logical_Expr ) ; 
+iteration_STMT#{#SYNCH 
+iteration_STMT#;#SYNCH 
+iteration_STMT#(#SYNCH 
+iteration_STMT#IDN#SYNCH 
+iteration_STMT#CONST_FLOAT#SYNCH 
+iteration_STMT#CONST_CHAR#SYNCH 
+iteration_STMT#CONST_CHAR*#SYNCH 
+iteration_STMT#CONST_INT16#SYNCH 
+iteration_STMT#CONST_INT8#SYNCH 
+iteration_STMT#CONST_INT10#SYNCH 
+iteration_STMT#++#SYNCH 
+iteration_STMT#--#SYNCH 
+iteration_STMT#!#SYNCH 
+iteration_STMT#if#SYNCH 
+iteration_STMT#switch#SYNCH 
+iteration_STMT#continue#SYNCH 
+iteration_STMT#break#SYNCH 
+iteration_STMT#return#SYNCH 
+iteration_STMT#}#SYNCH 
+iteration_STMT#case#SYNCH 
+iteration_STMT#else#SYNCH 
+iteration_STMT#default#SYNCH 
+jump_STMT#continue#continue ; 
+jump_STMT#break#break ; 
+jump_STMT#return#return jump_STMT1 
+jump_STMT#{#SYNCH 
+jump_STMT#;#SYNCH 
+jump_STMT#(#SYNCH 
+jump_STMT#IDN#SYNCH 
+jump_STMT#CONST_FLOAT#SYNCH 
+jump_STMT#CONST_CHAR#SYNCH 
+jump_STMT#CONST_CHAR*#SYNCH 
+jump_STMT#CONST_INT16#SYNCH 
+jump_STMT#CONST_INT8#SYNCH 
+jump_STMT#CONST_INT10#SYNCH 
+jump_STMT#++#SYNCH 
+jump_STMT#--#SYNCH 
+jump_STMT#!#SYNCH 
+jump_STMT#if#SYNCH 
+jump_STMT#switch#SYNCH 
+jump_STMT#while#SYNCH 
+jump_STMT#for#SYNCH 
+jump_STMT#do#SYNCH 
+jump_STMT#}#SYNCH 
+jump_STMT#case#SYNCH 
+jump_STMT#else#SYNCH 
+jump_STMT#default#SYNCH 
+jump_STMT1#;#; 
+jump_STMT1#(#assigment_Expr ; 
+jump_STMT1#IDN#assigment_Expr ; 
+jump_STMT1#CONST_FLOAT#assigment_Expr ; 
+jump_STMT1#CONST_CHAR#assigment_Expr ; 
+jump_STMT1#CONST_CHAR*#assigment_Expr ; 
+jump_STMT1#CONST_INT16#assigment_Expr ; 
+jump_STMT1#CONST_INT8#assigment_Expr ; 
+jump_STMT1#CONST_INT10#assigment_Expr ; 
+jump_STMT1#++#assigment_Expr ; 
+jump_STMT1#--#assigment_Expr ; 
+jump_STMT1#!#assigment_Expr ; 
+jump_STMT1#{#SYNCH 
+jump_STMT1#if#SYNCH 
+jump_STMT1#switch#SYNCH 
+jump_STMT1#while#SYNCH 
+jump_STMT1#for#SYNCH 
+jump_STMT1#do#SYNCH 
+jump_STMT1#continue#SYNCH 
+jump_STMT1#break#SYNCH 
+jump_STMT1#return#SYNCH 
+jump_STMT1#}#SYNCH 
+jump_STMT1#case#SYNCH 
+jump_STMT1#else#SYNCH 
+jump_STMT1#default#SYNCH 
+assigment_Expr#(#mathExpr assigment_Expr1 
+assigment_Expr#IDN#mathExpr assigment_Expr1 
+assigment_Expr#CONST_FLOAT#mathExpr assigment_Expr1 
+assigment_Expr#CONST_CHAR#mathExpr assigment_Expr1 
+assigment_Expr#CONST_CHAR*#mathExpr assigment_Expr1 
+assigment_Expr#CONST_INT16#mathExpr assigment_Expr1 
+assigment_Expr#CONST_INT8#mathExpr assigment_Expr1 
+assigment_Expr#CONST_INT10#mathExpr assigment_Expr1 
+assigment_Expr#++#mathExpr assigment_Expr1 
+assigment_Expr#--#mathExpr assigment_Expr1 
+assigment_Expr#!#mathExpr assigment_Expr1 
+assigment_Expr#,#SYNCH 
+assigment_Expr#auto#SYNCH 
+assigment_Expr#register#SYNCH 
+assigment_Expr#const#SYNCH 
+assigment_Expr#extern#SYNCH 
+assigment_Expr#typedef#SYNCH 
+assigment_Expr#int#SYNCH 
+assigment_Expr#float#SYNCH 
+assigment_Expr#char#SYNCH 
+assigment_Expr#long#SYNCH 
+assigment_Expr#short#SYNCH 
+assigment_Expr#double#SYNCH 
+assigment_Expr#}#SYNCH 
+assigment_Expr#{#SYNCH 
+assigment_Expr#;#SYNCH 
+assigment_Expr#if#SYNCH 
+assigment_Expr#switch#SYNCH 
+assigment_Expr#while#SYNCH 
+assigment_Expr#for#SYNCH 
+assigment_Expr#do#SYNCH 
+assigment_Expr#continue#SYNCH 
+assigment_Expr#break#SYNCH 
+assigment_Expr#return#SYNCH 
+assigment_Expr#=#SYNCH 
+assigment_Expr#*=#SYNCH 
+assigment_Expr#/=#SYNCH 
+assigment_Expr#%=#SYNCH 
+assigment_Expr#+=#SYNCH 
+assigment_Expr#-=#SYNCH 
+assigment_Expr#<<=#SYNCH 
+assigment_Expr#>>=#SYNCH 
+assigment_Expr#|=#SYNCH 
+assigment_Expr#&=#SYNCH 
+assigment_Expr#^=#SYNCH 
+assigment_Expr#case#SYNCH 
+assigment_Expr#else#SYNCH 
+assigment_Expr#)#SYNCH 
+assigment_Expr#<#SYNCH 
+assigment_Expr#>#SYNCH 
+assigment_Expr#<=#SYNCH 
+assigment_Expr#>=#SYNCH 
+assigment_Expr#==#SYNCH 
+assigment_Expr#!=#SYNCH 
+assigment_Expr#default#SYNCH 
+assigment_Expr#]#SYNCH 
+assigment_Expr1#,#$ 
+assigment_Expr1#auto#$ 
+assigment_Expr1#register#$ 
+assigment_Expr1#const#$ 
+assigment_Expr1#extern#$ 
+assigment_Expr1#typedef#$ 
+assigment_Expr1#int#$ 
+assigment_Expr1#float#$ 
+assigment_Expr1#char#$ 
+assigment_Expr1#long#$ 
+assigment_Expr1#short#$ 
+assigment_Expr1#double#$ 
+assigment_Expr1#}#$ 
+assigment_Expr1#{#$ 
+assigment_Expr1#;#$ 
+assigment_Expr1#(#$ 
+assigment_Expr1#IDN#$ 
+assigment_Expr1#CONST_FLOAT#$ 
+assigment_Expr1#CONST_CHAR#$ 
+assigment_Expr1#CONST_CHAR*#$ 
+assigment_Expr1#CONST_INT16#$ 
+assigment_Expr1#CONST_INT8#$ 
+assigment_Expr1#CONST_INT10#$ 
+assigment_Expr1#++#$ 
+assigment_Expr1#--#$ 
+assigment_Expr1#!#$ 
+assigment_Expr1#if#$ 
+assigment_Expr1#switch#$ 
+assigment_Expr1#while#$ 
+assigment_Expr1#for#$ 
+assigment_Expr1#do#$ 
+assigment_Expr1#continue#$ 
+assigment_Expr1#break#$ 
+assigment_Expr1#return#$ 
+assigment_Expr1#=#$ 
+assigment_Expr1#*=#$ 
+assigment_Expr1#/=#$ 
+assigment_Expr1#%=#$ 
+assigment_Expr1#+=#$ 
+assigment_Expr1#-=#$ 
+assigment_Expr1#<<=#$ 
+assigment_Expr1#>>=#$ 
+assigment_Expr1#|=#$ 
+assigment_Expr1#&=#$ 
+assigment_Expr1#^=#$ 
+assigment_Expr1#case#$ 
+assigment_Expr1#else#$ 
+assigment_Expr1#)#$ 
+assigment_Expr1#<#$ 
+assigment_Expr1#>#$ 
+assigment_Expr1#<=#$ 
+assigment_Expr1#>=#$ 
+assigment_Expr1#==#$ 
+assigment_Expr1#!=#$ 
+assigment_Expr1#default#$ 
+assigment_Expr1#]#$ 
+assigment_Expr1#=#Assign_OP assigment_Expr 
+assigment_Expr1#*=#Assign_OP assigment_Expr 
+assigment_Expr1#/=#Assign_OP assigment_Expr 
+assigment_Expr1#%=#Assign_OP assigment_Expr 
+assigment_Expr1#+=#Assign_OP assigment_Expr 
+assigment_Expr1#-=#Assign_OP assigment_Expr 
+assigment_Expr1#<<=#Assign_OP assigment_Expr 
+assigment_Expr1#>>=#Assign_OP assigment_Expr 
+assigment_Expr1#|=#Assign_OP assigment_Expr 
+assigment_Expr1#&=#Assign_OP assigment_Expr 
+assigment_Expr1#^=#Assign_OP assigment_Expr 
+mathExpr#(#T E' 
+mathExpr#IDN#T E' 
+mathExpr#CONST_FLOAT#T E' 
+mathExpr#CONST_CHAR#T E' 
+mathExpr#CONST_CHAR*#T E' 
+mathExpr#CONST_INT16#T E' 
+mathExpr#CONST_INT8#T E' 
+mathExpr#CONST_INT10#T E' 
+mathExpr#++#T E' 
+mathExpr#--#T E' 
+mathExpr#!#T E' 
+mathExpr#)#SYNCH 
+mathExpr#=#SYNCH 
+mathExpr#*=#SYNCH 
+mathExpr#/=#SYNCH 
+mathExpr#%=#SYNCH 
+mathExpr#+=#SYNCH 
+mathExpr#-=#SYNCH 
+mathExpr#<<=#SYNCH 
+mathExpr#>>=#SYNCH 
+mathExpr#|=#SYNCH 
+mathExpr#&=#SYNCH 
+mathExpr#^=#SYNCH 
+mathExpr#,#SYNCH 
+mathExpr#auto#SYNCH 
+mathExpr#register#SYNCH 
+mathExpr#const#SYNCH 
+mathExpr#extern#SYNCH 
+mathExpr#typedef#SYNCH 
+mathExpr#int#SYNCH 
+mathExpr#float#SYNCH 
+mathExpr#char#SYNCH 
+mathExpr#long#SYNCH 
+mathExpr#short#SYNCH 
+mathExpr#double#SYNCH 
+mathExpr#}#SYNCH 
+mathExpr#{#SYNCH 
+mathExpr#;#SYNCH 
+mathExpr#if#SYNCH 
+mathExpr#switch#SYNCH 
+mathExpr#while#SYNCH 
+mathExpr#for#SYNCH 
+mathExpr#do#SYNCH 
+mathExpr#continue#SYNCH 
+mathExpr#break#SYNCH 
+mathExpr#return#SYNCH 
+mathExpr#case#SYNCH 
+mathExpr#else#SYNCH 
+mathExpr#<#SYNCH 
+mathExpr#>#SYNCH 
+mathExpr#<=#SYNCH 
+mathExpr#>=#SYNCH 
+mathExpr#==#SYNCH 
+mathExpr#!=#SYNCH 
+mathExpr#default#SYNCH 
+mathExpr#]#SYNCH 
+E'#+#Third_Math_OP T E' 
+E'#-#Third_Math_OP T E' 
+E'#)#$ 
+E'#=#$ 
+E'#*=#$ 
+E'#/=#$ 
+E'#%=#$ 
+E'#+=#$ 
+E'#-=#$ 
+E'#<<=#$ 
+E'#>>=#$ 
+E'#|=#$ 
+E'#&=#$ 
+E'#^=#$ 
+E'#,#$ 
+E'#auto#$ 
+E'#register#$ 
+E'#const#$ 
+E'#extern#$ 
+E'#typedef#$ 
+E'#int#$ 
+E'#float#$ 
+E'#char#$ 
+E'#long#$ 
+E'#short#$ 
+E'#double#$ 
+E'#}#$ 
+E'#{#$ 
+E'#;#$ 
+E'#(#$ 
+E'#IDN#$ 
+E'#CONST_FLOAT#$ 
+E'#CONST_CHAR#$ 
+E'#CONST_CHAR*#$ 
+E'#CONST_INT16#$ 
+E'#CONST_INT8#$ 
+E'#CONST_INT10#$ 
+E'#++#$ 
+E'#--#$ 
+E'#!#$ 
+E'#if#$ 
+E'#switch#$ 
+E'#while#$ 
+E'#for#$ 
+E'#do#$ 
+E'#continue#$ 
+E'#break#$ 
+E'#return#$ 
+E'#case#$ 
+E'#else#$ 
+E'#<#$ 
+E'#>#$ 
+E'#<=#$ 
+E'#>=#$ 
+E'#==#$ 
+E'#!=#$ 
+E'#default#$ 
+E'#]#$ 
+T#(#F T' 
+T#IDN#F T' 
+T#CONST_FLOAT#F T' 
+T#CONST_CHAR#F T' 
+T#CONST_CHAR*#F T' 
+T#CONST_INT16#F T' 
+T#CONST_INT8#F T' 
+T#CONST_INT10#F T' 
+T#++#F T' 
+T#--#F T' 
+T#!#F T' 
+T#+#SYNCH 
+T#-#SYNCH 
+T#)#SYNCH 
+T#=#SYNCH 
+T#*=#SYNCH 
+T#/=#SYNCH 
+T#%=#SYNCH 
+T#+=#SYNCH 
+T#-=#SYNCH 
+T#<<=#SYNCH 
+T#>>=#SYNCH 
+T#|=#SYNCH 
+T#&=#SYNCH 
+T#^=#SYNCH 
+T#,#SYNCH 
+T#auto#SYNCH 
+T#register#SYNCH 
+T#const#SYNCH 
+T#extern#SYNCH 
+T#typedef#SYNCH 
+T#int#SYNCH 
+T#float#SYNCH 
+T#char#SYNCH 
+T#long#SYNCH 
+T#short#SYNCH 
+T#double#SYNCH 
+T#}#SYNCH 
+T#{#SYNCH 
+T#;#SYNCH 
+T#if#SYNCH 
+T#switch#SYNCH 
+T#while#SYNCH 
+T#for#SYNCH 
+T#do#SYNCH 
+T#continue#SYNCH 
+T#break#SYNCH 
+T#return#SYNCH 
+T#case#SYNCH 
+T#else#SYNCH 
+T#<#SYNCH 
+T#>#SYNCH 
+T#<=#SYNCH 
+T#>=#SYNCH 
+T#==#SYNCH 
+T#!=#SYNCH 
+T#default#SYNCH 
+T#]#SYNCH 
+T'#%#SECOND_Math_OP F T' 
+T'#*#SECOND_Math_OP F T' 
+T'#/#SECOND_Math_OP F T' 
+T'#+#$ 
+T'#-#$ 
+T'#)#$ 
+T'#=#$ 
+T'#*=#$ 
+T'#/=#$ 
+T'#%=#$ 
+T'#+=#$ 
+T'#-=#$ 
+T'#<<=#$ 
+T'#>>=#$ 
+T'#|=#$ 
+T'#&=#$ 
+T'#^=#$ 
+T'#,#$ 
+T'#auto#$ 
+T'#register#$ 
+T'#const#$ 
+T'#extern#$ 
+T'#typedef#$ 
+T'#int#$ 
+T'#float#$ 
+T'#char#$ 
+T'#long#$ 
+T'#short#$ 
+T'#double#$ 
+T'#}#$ 
+T'#{#$ 
+T'#;#$ 
+T'#(#$ 
+T'#IDN#$ 
+T'#CONST_FLOAT#$ 
+T'#CONST_CHAR#$ 
+T'#CONST_CHAR*#$ 
+T'#CONST_INT16#$ 
+T'#CONST_INT8#$ 
+T'#CONST_INT10#$ 
+T'#++#$ 
+T'#--#$ 
+T'#!#$ 
+T'#if#$ 
+T'#switch#$ 
+T'#while#$ 
+T'#for#$ 
+T'#do#$ 
+T'#continue#$ 
+T'#break#$ 
+T'#return#$ 
+T'#case#$ 
+T'#else#$ 
+T'#<#$ 
+T'#>#$ 
+T'#<=#$ 
+T'#>=#$ 
+T'#==#$ 
+T'#!=#$ 
+T'#default#$ 
+T'#]#$ 
+F#(#( assigment_Expr ) 
+F#IDN#IDN FREST 
+F#CONST_FLOAT#math_CONST FREST 
+F#CONST_CHAR#math_CONST FREST 
+F#CONST_CHAR*#math_CONST FREST 
+F#CONST_INT16#math_CONST FREST 
+F#CONST_INT8#math_CONST FREST 
+F#CONST_INT10#math_CONST FREST 
+F#++#First_Math_OP IDN FREST 
+F#--#First_Math_OP IDN FREST 
+F#!#First_Math_OP IDN FREST 
+F#%#SYNCH 
+F#*#SYNCH 
+F#/#SYNCH 
+F#+#SYNCH 
+F#-#SYNCH 
+F#)#SYNCH 
+F#=#SYNCH 
+F#*=#SYNCH 
+F#/=#SYNCH 
+F#%=#SYNCH 
+F#+=#SYNCH 
+F#-=#SYNCH 
+F#<<=#SYNCH 
+F#>>=#SYNCH 
+F#|=#SYNCH 
+F#&=#SYNCH 
+F#^=#SYNCH 
+F#,#SYNCH 
+F#auto#SYNCH 
+F#register#SYNCH 
+F#const#SYNCH 
+F#extern#SYNCH 
+F#typedef#SYNCH 
+F#int#SYNCH 
+F#float#SYNCH 
+F#char#SYNCH 
+F#long#SYNCH 
+F#short#SYNCH 
+F#double#SYNCH 
+F#}#SYNCH 
+F#{#SYNCH 
+F#;#SYNCH 
+F#if#SYNCH 
+F#switch#SYNCH 
+F#while#SYNCH 
+F#for#SYNCH 
+F#do#SYNCH 
+F#continue#SYNCH 
+F#break#SYNCH 
+F#return#SYNCH 
+F#case#SYNCH 
+F#else#SYNCH 
+F#<#SYNCH 
+F#>#SYNCH 
+F#<=#SYNCH 
+F#>=#SYNCH 
+F#==#SYNCH 
+F#!=#SYNCH 
+F#default#SYNCH 
+F#]#SYNCH 
+FREST#++#++ 
+FREST#--#-- 
+FREST#%#$ 
+FREST#*#$ 
+FREST#/#$ 
+FREST#+#$ 
+FREST#-#$ 
+FREST#)#$ 
+FREST#=#$ 
+FREST#*=#$ 
+FREST#/=#$ 
+FREST#%=#$ 
+FREST#+=#$ 
+FREST#-=#$ 
+FREST#<<=#$ 
+FREST#>>=#$ 
+FREST#|=#$ 
+FREST#&=#$ 
+FREST#^=#$ 
+FREST#,#$ 
+FREST#auto#$ 
+FREST#register#$ 
+FREST#const#$ 
+FREST#extern#$ 
+FREST#typedef#$ 
+FREST#int#$ 
+FREST#float#$ 
+FREST#char#$ 
+FREST#long#$ 
+FREST#short#$ 
+FREST#double#$ 
+FREST#}#$ 
+FREST#{#$ 
+FREST#;#$ 
+FREST#(#$ 
+FREST#IDN#$ 
+FREST#CONST_FLOAT#$ 
+FREST#CONST_CHAR#$ 
+FREST#CONST_CHAR*#$ 
+FREST#CONST_INT16#$ 
+FREST#CONST_INT8#$ 
+FREST#CONST_INT10#$ 
+FREST#++#$ 
+FREST#--#$ 
+FREST#!#$ 
+FREST#if#$ 
+FREST#switch#$ 
+FREST#while#$ 
+FREST#for#$ 
+FREST#do#$ 
+FREST#continue#$ 
+FREST#break#$ 
+FREST#return#$ 
+FREST#case#$ 
+FREST#else#$ 
+FREST#<#$ 
+FREST#>#$ 
+FREST#<=#$ 
+FREST#>=#$ 
+FREST#==#$ 
+FREST#!=#$ 
+FREST#default#$ 
+FREST#]#$ 
+FREST#[#[ IN ] FREST' 
+FREST#(#fun_return 
+FREST'#[#[ IN ] FREST' 
+FREST'#%#$ 
+FREST'#*#$ 
+FREST'#/#$ 
+FREST'#+#$ 
+FREST'#-#$ 
+FREST'#)#$ 
+FREST'#=#$ 
+FREST'#*=#$ 
+FREST'#/=#$ 
+FREST'#%=#$ 
+FREST'#+=#$ 
+FREST'#-=#$ 
+FREST'#<<=#$ 
+FREST'#>>=#$ 
+FREST'#|=#$ 
+FREST'#&=#$ 
+FREST'#^=#$ 
+FREST'#,#$ 
+FREST'#auto#$ 
+FREST'#register#$ 
+FREST'#const#$ 
+FREST'#extern#$ 
+FREST'#typedef#$ 
+FREST'#int#$ 
+FREST'#float#$ 
+FREST'#char#$ 
+FREST'#long#$ 
+FREST'#short#$ 
+FREST'#double#$ 
+FREST'#}#$ 
+FREST'#{#$ 
+FREST'#;#$ 
+FREST'#(#$ 
+FREST'#IDN#$ 
+FREST'#CONST_FLOAT#$ 
+FREST'#CONST_CHAR#$ 
+FREST'#CONST_CHAR*#$ 
+FREST'#CONST_INT16#$ 
+FREST'#CONST_INT8#$ 
+FREST'#CONST_INT10#$ 
+FREST'#++#$ 
+FREST'#--#$ 
+FREST'#!#$ 
+FREST'#if#$ 
+FREST'#switch#$ 
+FREST'#while#$ 
+FREST'#for#$ 
+FREST'#do#$ 
+FREST'#continue#$ 
+FREST'#break#$ 
+FREST'#return#$ 
+FREST'#case#$ 
+FREST'#else#$ 
+FREST'#<#$ 
+FREST'#>#$ 
+FREST'#<=#$ 
+FREST'#>=#$ 
+FREST'#==#$ 
+FREST'#!=#$ 
+FREST'#default#$ 
+FREST'#]#$ 
+IN#(#assigment_Expr 
+IN#IDN#assigment_Expr 
+IN#CONST_FLOAT#assigment_Expr 
+IN#CONST_CHAR#assigment_Expr 
+IN#CONST_CHAR*#assigment_Expr 
+IN#CONST_INT16#assigment_Expr 
+IN#CONST_INT8#assigment_Expr 
+IN#CONST_INT10#assigment_Expr 
+IN#++#assigment_Expr 
+IN#--#assigment_Expr 
+IN#!#assigment_Expr 
+IN#]#$ 
+math_CONST#CONST_FLOAT#const_expr 
+math_CONST#CONST_CHAR#const_expr 
+math_CONST#CONST_CHAR*#const_expr 
+math_CONST#CONST_INT16#const_expr 
+math_CONST#CONST_INT8#const_expr 
+math_CONST#CONST_INT10#const_expr 
+math_CONST#++#SYNCH 
+math_CONST#--#SYNCH 
+math_CONST#[#SYNCH 
+math_CONST#(#SYNCH 
+math_CONST#%#SYNCH 
+math_CONST#*#SYNCH 
+math_CONST#/#SYNCH 
+math_CONST#+#SYNCH 
+math_CONST#-#SYNCH 
+math_CONST#)#SYNCH 
+math_CONST#=#SYNCH 
+math_CONST#*=#SYNCH 
+math_CONST#/=#SYNCH 
+math_CONST#%=#SYNCH 
+math_CONST#+=#SYNCH 
+math_CONST#-=#SYNCH 
+math_CONST#<<=#SYNCH 
+math_CONST#>>=#SYNCH 
+math_CONST#|=#SYNCH 
+math_CONST#&=#SYNCH 
+math_CONST#^=#SYNCH 
+math_CONST#,#SYNCH 
+math_CONST#auto#SYNCH 
+math_CONST#register#SYNCH 
+math_CONST#const#SYNCH 
+math_CONST#extern#SYNCH 
+math_CONST#typedef#SYNCH 
+math_CONST#int#SYNCH 
+math_CONST#float#SYNCH 
+math_CONST#char#SYNCH 
+math_CONST#long#SYNCH 
+math_CONST#short#SYNCH 
+math_CONST#double#SYNCH 
+math_CONST#}#SYNCH 
+math_CONST#{#SYNCH 
+math_CONST#;#SYNCH 
+math_CONST#IDN#SYNCH 
+math_CONST#!#SYNCH 
+math_CONST#if#SYNCH 
+math_CONST#switch#SYNCH 
+math_CONST#while#SYNCH 
+math_CONST#for#SYNCH 
+math_CONST#do#SYNCH 
+math_CONST#continue#SYNCH 
+math_CONST#break#SYNCH 
+math_CONST#return#SYNCH 
+math_CONST#case#SYNCH 
+math_CONST#else#SYNCH 
+math_CONST#<#SYNCH 
+math_CONST#>#SYNCH 
+math_CONST#<=#SYNCH 
+math_CONST#>=#SYNCH 
+math_CONST#==#SYNCH 
+math_CONST#!=#SYNCH 
+math_CONST#default#SYNCH 
+math_CONST#]#SYNCH 
+CONST_INT#CONST_INT16#CONST_INT16 
+CONST_INT#CONST_INT8#CONST_INT8 
+CONST_INT#CONST_INT10#CONST_INT10 
+CONST_INT#]#SYNCH 
+CONST_INT#,#SYNCH 
+CONST_INT#}#SYNCH 
+CONST_INT#:#SYNCH 
+CONST_INT#++#SYNCH 
+CONST_INT#--#SYNCH 
+CONST_INT#[#SYNCH 
+CONST_INT#(#SYNCH 
+CONST_INT#%#SYNCH 
+CONST_INT#*#SYNCH 
+CONST_INT#/#SYNCH 
+CONST_INT#+#SYNCH 
+CONST_INT#-#SYNCH 
+CONST_INT#)#SYNCH 
+CONST_INT#=#SYNCH 
+CONST_INT#*=#SYNCH 
+CONST_INT#/=#SYNCH 
+CONST_INT#%=#SYNCH 
+CONST_INT#+=#SYNCH 
+CONST_INT#-=#SYNCH 
+CONST_INT#<<=#SYNCH 
+CONST_INT#>>=#SYNCH 
+CONST_INT#|=#SYNCH 
+CONST_INT#&=#SYNCH 
+CONST_INT#^=#SYNCH 
+CONST_INT#auto#SYNCH 
+CONST_INT#register#SYNCH 
+CONST_INT#const#SYNCH 
+CONST_INT#extern#SYNCH 
+CONST_INT#typedef#SYNCH 
+CONST_INT#int#SYNCH 
+CONST_INT#float#SYNCH 
+CONST_INT#char#SYNCH 
+CONST_INT#long#SYNCH 
+CONST_INT#short#SYNCH 
+CONST_INT#double#SYNCH 
+CONST_INT#{#SYNCH 
+CONST_INT#;#SYNCH 
+CONST_INT#IDN#SYNCH 
+CONST_INT#CONST_FLOAT#SYNCH 
+CONST_INT#CONST_CHAR#SYNCH 
+CONST_INT#CONST_CHAR*#SYNCH 
+CONST_INT#!#SYNCH 
+CONST_INT#if#SYNCH 
+CONST_INT#switch#SYNCH 
+CONST_INT#while#SYNCH 
+CONST_INT#for#SYNCH 
+CONST_INT#do#SYNCH 
+CONST_INT#continue#SYNCH 
+CONST_INT#break#SYNCH 
+CONST_INT#return#SYNCH 
+CONST_INT#case#SYNCH 
+CONST_INT#else#SYNCH 
+CONST_INT#<#SYNCH 
+CONST_INT#>#SYNCH 
+CONST_INT#<=#SYNCH 
+CONST_INT#>=#SYNCH 
+CONST_INT#==#SYNCH 
+CONST_INT#!=#SYNCH 
+CONST_INT#default#SYNCH 
+SECOND_Math_OP#%#% 
+SECOND_Math_OP#*#* 
+SECOND_Math_OP#/#/ 
+SECOND_Math_OP#(#SYNCH 
+SECOND_Math_OP#IDN#SYNCH 
+SECOND_Math_OP#CONST_FLOAT#SYNCH 
+SECOND_Math_OP#CONST_CHAR#SYNCH 
+SECOND_Math_OP#CONST_CHAR*#SYNCH 
+SECOND_Math_OP#CONST_INT16#SYNCH 
+SECOND_Math_OP#CONST_INT8#SYNCH 
+SECOND_Math_OP#CONST_INT10#SYNCH 
+SECOND_Math_OP#++#SYNCH 
+SECOND_Math_OP#--#SYNCH 
+SECOND_Math_OP#!#SYNCH 
+Third_Math_OP#+#+ 
+Third_Math_OP#-#- 
+Third_Math_OP#(#SYNCH 
+Third_Math_OP#IDN#SYNCH 
+Third_Math_OP#CONST_FLOAT#SYNCH 
+Third_Math_OP#CONST_CHAR#SYNCH 
+Third_Math_OP#CONST_CHAR*#SYNCH 
+Third_Math_OP#CONST_INT16#SYNCH 
+Third_Math_OP#CONST_INT8#SYNCH 
+Third_Math_OP#CONST_INT10#SYNCH 
+Third_Math_OP#++#SYNCH 
+Third_Math_OP#--#SYNCH 
+Third_Math_OP#!#SYNCH 
+First_Math_OP#++#++ 
+First_Math_OP#--#-- 
+First_Math_OP#!#! 
+First_Math_OP#IDN#SYNCH 
+relation_Expr#(#assigment_Expr relation_Expr1 
+relation_Expr#IDN#assigment_Expr relation_Expr1 
+relation_Expr#CONST_FLOAT#assigment_Expr relation_Expr1 
+relation_Expr#CONST_CHAR#assigment_Expr relation_Expr1 
+relation_Expr#CONST_CHAR*#assigment_Expr relation_Expr1 
+relation_Expr#CONST_INT16#assigment_Expr relation_Expr1 
+relation_Expr#CONST_INT8#assigment_Expr relation_Expr1 
+relation_Expr#CONST_INT10#assigment_Expr relation_Expr1 
+relation_Expr#++#assigment_Expr relation_Expr1 
+relation_Expr#--#assigment_Expr relation_Expr1 
+relation_Expr#!#assigment_Expr relation_Expr1 
+relation_Expr#)#SYNCH 
+relation_Expr#;#SYNCH 
+relation_Expr1#<#relop assigment_Expr 
+relation_Expr1#>#relop assigment_Expr 
+relation_Expr1#<=#relop assigment_Expr 
+relation_Expr1#>=#relop assigment_Expr 
+relation_Expr1#==#relop assigment_Expr 
+relation_Expr1#!=#relop assigment_Expr 
+relation_Expr1#)#$ 
+relation_Expr1#;#$ 
+relop#<#< 
+relop#>#> 
+relop#<=#<= 
+relop#>=#>= 
+relop#==#== 
+relop#!=#!= 
+relop#(#SYNCH 
+relop#IDN#SYNCH 
+relop#CONST_FLOAT#SYNCH 
+relop#CONST_CHAR#SYNCH 
+relop#CONST_CHAR*#SYNCH 
+relop#CONST_INT16#SYNCH 
+relop#CONST_INT8#SYNCH 
+relop#CONST_INT10#SYNCH 
+relop#++#SYNCH 
+relop#--#SYNCH 
+relop#!#SYNCH 
+logical_Expr#!#! ( relation_Expr ) logical_Expr1 
+logical_Expr#(#( relation_Expr ) logical_Expr1 
+logical_Expr#(#relation_Expr 
+logical_Expr#IDN#relation_Expr 
+logical_Expr#CONST_FLOAT#relation_Expr 
+logical_Expr#CONST_CHAR#relation_Expr 
+logical_Expr#CONST_CHAR*#relation_Expr 
+logical_Expr#CONST_INT16#relation_Expr 
+logical_Expr#CONST_INT8#relation_Expr 
+logical_Expr#CONST_INT10#relation_Expr 
+logical_Expr#++#relation_Expr 
+logical_Expr#--#relation_Expr 
+logical_Expr#!#relation_Expr 
+logical_Expr#)#SYNCH 
+logical_Expr#;#SYNCH 
+logical_Expr1#&&#lop logical_Expr 
+logical_Expr1#||#lop logical_Expr 
+logical_Expr1#)#$ 
+logical_Expr1#;#$ 
+lop#&&#&& 
+lop#||#|| 
+lop#!#SYNCH 
+lop#(#SYNCH 
+lop#IDN#SYNCH 
+lop#CONST_FLOAT#SYNCH 
+lop#CONST_CHAR#SYNCH 
+lop#CONST_CHAR*#SYNCH 
+lop#CONST_INT16#SYNCH 
+lop#CONST_INT8#SYNCH 
+lop#CONST_INT10#SYNCH 
+lop#++#SYNCH 
+lop#--#SYNCH 
+Assign_OP#=#= 
+Assign_OP#*=#*= 
+Assign_OP#/=#/= 
+Assign_OP#%=#%= 
+Assign_OP#+=#+= 
+Assign_OP#-=#-= 
+Assign_OP#<<=#<<= 
+Assign_OP#>>=#>>= 
+Assign_OP#|=#|= 
+Assign_OP#&=#&= 
+Assign_OP#^=#^= 
+Assign_OP#(#SYNCH 
+Assign_OP#IDN#SYNCH 
+Assign_OP#CONST_FLOAT#SYNCH 
+Assign_OP#CONST_CHAR#SYNCH 
+Assign_OP#CONST_CHAR*#SYNCH 
+Assign_OP#CONST_INT16#SYNCH 
+Assign_OP#CONST_INT8#SYNCH 
+Assign_OP#CONST_INT10#SYNCH 
+Assign_OP#++#SYNCH 
+Assign_OP#--#SYNCH 
+Assign_OP#!#SYNCH 
+Assign_OP#{#SYNCH 

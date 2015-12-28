@@ -1,0 +1,8 @@
+D:\Data\项目\所有毕业设计\路思远\超级玛丽\测试程序\WindowsFormsApplication4\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+D:\Data\项目\所有毕业设计\路思远\超级玛丽\测试程序\WindowsFormsApplication4\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+D:\Data\项目\所有毕业设计\路思远\超级玛丽\测试程序\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\ResolveAssemblyReference.cache
+D:\Data\项目\所有毕业设计\路思远\超级玛丽\测试程序\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+D:\Data\项目\所有毕业设计\路思远\超级玛丽\测试程序\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+D:\Data\项目\所有毕业设计\路思远\超级玛丽\测试程序\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+D:\Data\项目\所有毕业设计\路思远\超级玛丽\测试程序\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+D:\Data\项目\所有毕业设计\路思远\超级玛丽\测试程序\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Richtextbox测试.resources

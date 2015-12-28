@@ -1,0 +1,440 @@
+program->functionList 
+functionList->Fun #BUILD("[",functionList.name,"Fun_END","]")# functionList 
+Fun->type #Fun.type=type.type# fun_head #functionList.name=fun_head.name;Fun.name=fun_head.name;Fun.params=fun_head.params;declareFunction(Fun)# FunRest 
+type->int #type.type="int"# 
+fun_head->IDN #fun_head.name=IDN.name# ( paramsDec #fun_head.params=paramsDec.params# 
+paramsDec->param_list ) #paramsDec.params=param_list.params# 
+param_list->param #new_param.params=param.params# new_param #param_list.params=new_param.params# 
+param->type #param.params="#";param.params=type.type;param.params=":"# var #param.params=var.name# 
+type->int #type.type="int"# 
+var->IDN #var.name=IDN.name# varRest 
+varRest->$ 
+new_param->, #param_list.params=param.params# param_list #new_param.params=param_list.params# 
+param_list->param #new_param.params=param.params# new_param #param_list.params=new_param.params# 
+param->type #param.params="#";param.params=type.type;param.params=":"# var #param.params=var.name# 
+type->float #type.type="float"# 
+var->IDN #var.name=IDN.name# varRest 
+varRest->$ 
+new_param->$ 
+FunRest->Body 
+Body->{ dec_Stmt_List } 
+dec_Stmt_List->dec new_dec_Stmt stmt_List 
+dec->store_type #dec.store=store_type.type# type #dec.type=type.type# init_var #dec.name=init_var.name# ; #declareVar(dec)# 
+store_type->$ 
+type->int #type.type="int"# 
+init_var->common_dec #init_var.name=common_dec.name# special_dec 
+common_dec->IDN #common_dec.name=IDN.name# 
+special_dec->$ 
+new_dec_Stmt->dec new_dec_Stmt 
+dec->store_type #dec.store=store_type.type# type #dec.type=type.type# init_var #dec.name=init_var.name# ; #declareVar(dec)# 
+store_type->$ 
+type->int #type.type="int"# 
+init_var->common_dec #init_var.name=common_dec.name# special_dec 
+common_dec->IDN #common_dec.name=IDN.name# 
+special_dec->[ CONST_INT ] #init_var.name="*";init_var.name=CONST_INT.name# special_dec 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+special_dec->[ CONST_INT ] #init_var.name="*";init_var.name=CONST_INT.name# special_dec 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+special_dec->[ CONST_INT ] #init_var.name="*";init_var.name=CONST_INT.name# special_dec 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+special_dec->$ 
+new_dec_Stmt->dec new_dec_Stmt 
+dec->store_type #dec.store=store_type.type# type #dec.type=type.type# init_var #dec.name=init_var.name# ; #declareVar(dec)# 
+store_type->$ 
+type->int #type.type="int"# 
+init_var->common_dec #init_var.name=common_dec.name# special_dec 
+common_dec->IDN #common_dec.name=IDN.name# 
+special_dec->[ CONST_INT ] #init_var.name="*";init_var.name=CONST_INT.name# special_dec 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+special_dec->$ 
+new_dec_Stmt->dec new_dec_Stmt 
+dec->store_type #dec.store=store_type.type# type #dec.type=type.type# init_var #dec.name=init_var.name# ; #declareVar(dec)# 
+store_type->$ 
+type->int #type.type="int"# 
+init_var->common_dec #init_var.name=common_dec.name# special_dec 
+common_dec->IDN #common_dec.name=IDN.name# 
+special_dec->$ 
+new_dec_Stmt->dec new_dec_Stmt 
+dec->store_type #dec.store=store_type.type# type #dec.type=type.type# init_var #dec.name=init_var.name# ; #declareVar(dec)# 
+store_type->$ 
+type->float #type.type="float"# 
+init_var->common_dec #init_var.name=common_dec.name# special_dec 
+common_dec->IDN #common_dec.name=IDN.name# 
+special_dec->$ 
+new_dec_Stmt->$ 
+stmt_List->STMT new_STMT 
+STMT->Expr_STMT 
+Expr_STMT->Assign_STMT 
+Assign_STMT->IDN #selectAssign.name=IDN.name;selectAssign.left=IDN.name# selectAssign #Assign_STMT.left=selectAssign.left;Assign_STMT.name=selectAssign.left# 
+selectAssign->= mathExpr #selectAssign.addr=mathExpr.addr;lookIDN(selectAssign);ASSIGN()# ; 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->math_CONST #F.name=math_CONST.name# 
+math_CONST->const_expr #math_CONST.name=const_expr.name# 
+const_expr->CONST_FLOAT #const_expr.name=CONST_FLOAT.name# 
+T1'->$ 
+E'->$ 
+new_STMT->STMT new_STMT 
+STMT->Expr_STMT 
+Expr_STMT->Assign_STMT 
+Assign_STMT->IDN #selectAssign.name=IDN.name;selectAssign.left=IDN.name# selectAssign #Assign_STMT.left=selectAssign.left;Assign_STMT.name=selectAssign.left# 
+selectAssign->= mathExpr #selectAssign.addr=mathExpr.addr;lookIDN(selectAssign);ASSIGN()# ; 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->math_CONST #F.name=math_CONST.name# 
+math_CONST->const_expr #math_CONST.name=const_expr.name# 
+const_expr->CONST_INT #const_expr.name=CONST_INT.name# 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+T1'->$ 
+E'->$ 
+new_STMT->STMT new_STMT 
+STMT->Expr_STMT 
+Expr_STMT->Assign_STMT 
+Assign_STMT->IDN #selectAssign.name=IDN.name;selectAssign.left=IDN.name# selectAssign #Assign_STMT.left=selectAssign.left;Assign_STMT.name=selectAssign.left# 
+selectAssign->= mathExpr #selectAssign.addr=mathExpr.addr;lookIDN(selectAssign);ASSIGN()# ; 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->( mathExpr ) #F.name=mathExpr.name# 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->IDN #lookIDN(IDN);FREST.name=IDN.name# FREST #lookGroup(1,FREST.name);F.name=FREST.name# 
+FREST->$ 
+T1'->$ 
+E'->+ Term #newTemp(mathExpr);gen(mathExpr,E',"+",Term);E'.name="NULL";E1'.name="NULL";E1'.name=mathExpr.addr# E1' #E'.name="NULL";E'.name=E1'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->math_CONST #F.name=math_CONST.name# 
+math_CONST->const_expr #math_CONST.name=const_expr.name# 
+const_expr->CONST_INT #const_expr.name=CONST_INT.name# 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+T1'->$ 
+E1'->E' #E1'.name=E'.name# 
+E'->$ 
+T1'->* F #newTemp(Term);gen(Term,T1',"*",F);T1'.name="NULL";T'.name="NULL";T'.name=Term.addr# T' #T1.name="NULL";T1'.name=T'.name# 
+F->math_CONST #F.name=math_CONST.name# 
+math_CONST->const_expr #math_CONST.name=const_expr.name# 
+const_expr->CONST_INT #const_expr.name=CONST_INT.name# 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+T'->T1' #T'.name=T1'.name# 
+T1'->$ 
+E'->- Term #newTemp(mathExpr);gen(mathExpr,E',"-",Term);E'.name="NULL";E1'.name="NULL";E1'.name=mathExpr.addr# E1' #E'.name="NULL";E'.name=E1'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->IDN #lookIDN(IDN);FREST.name=IDN.name# FREST #lookGroup(1,FREST.name);F.name=FREST.name# 
+FREST->$ 
+T1'->$ 
+E1'->E' #E1'.name=E'.name# 
+E'->$ 
+new_STMT->STMT new_STMT 
+STMT->Expr_STMT 
+Expr_STMT->Assign_STMT 
+Assign_STMT->IDN #selectAssign.name=IDN.name;selectAssign.left=IDN.name# selectAssign #Assign_STMT.left=selectAssign.left;Assign_STMT.name=selectAssign.left# 
+selectAssign->= mathExpr #selectAssign.addr=mathExpr.addr;lookIDN(selectAssign);ASSIGN()# ; 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->IDN #lookIDN(IDN);FREST.name=IDN.name# FREST #lookGroup(1,FREST.name);F.name=FREST.name# 
+FREST->$ 
+T1'->$ 
+E'->+ Term #newTemp(mathExpr);gen(mathExpr,E',"+",Term);E'.name="NULL";E1'.name="NULL";E1'.name=mathExpr.addr# E1' #E'.name="NULL";E'.name=E1'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->IDN #lookIDN(IDN);FREST.name=IDN.name# FREST #lookGroup(1,FREST.name);F.name=FREST.name# 
+FREST->$ 
+T1'->* F #newTemp(Term);gen(Term,T1',"*",F);T1'.name="NULL";T'.name="NULL";T'.name=Term.addr# T' #T1.name="NULL";T1'.name=T'.name# 
+F->( mathExpr ) #F.name=mathExpr.name# 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->math_CONST #F.name=math_CONST.name# 
+math_CONST->const_expr #math_CONST.name=const_expr.name# 
+const_expr->CONST_INT #const_expr.name=CONST_INT.name# 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+T1'->$ 
+E'->+ Term #newTemp(mathExpr);gen(mathExpr,E',"+",Term);E'.name="NULL";E1'.name="NULL";E1'.name=mathExpr.addr# E1' #E'.name="NULL";E'.name=E1'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->math_CONST #F.name=math_CONST.name# 
+math_CONST->const_expr #math_CONST.name=const_expr.name# 
+const_expr->CONST_INT #const_expr.name=CONST_INT.name# 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+T1'->$ 
+E1'->E' #E1'.name=E'.name# 
+E'->$ 
+T'->T1' #T'.name=T1'.name# 
+T1'->$ 
+E1'->E' #E1'.name=E'.name# 
+E'->$ 
+new_STMT->STMT new_STMT 
+STMT->iteration_STMT #STMT.next=iteration_STMT.next# 
+iteration_STMT->while ( #newLabel(iteration_STMT.begin);newLabel(iteration_STMT.true);newLabel(iteration_STMT.next);label(iteration_STMT.begin)# logical_Expr #iteration_STMT.addr=logical_Expr.addr# ) #BUILD("if",iteration_STMT.addr,"goto",iteration_STMT.true);BUILD("","","goto",iteration_STMT.next);label(iteration_STMT.true)# STMT #BUILD("","","goto",iteration_STMT.begin);label(iteration_STMT.next)# 
+logical_Expr->relation_Expr #logical_Expr.addr=relation_Expr.name# 
+relation_Expr->mathExpr #relation_Expr.name=mathExpr.addr# relation_Expr1 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->IDN #lookIDN(IDN);FREST.name=IDN.name# FREST #lookGroup(1,FREST.name);F.name=FREST.name# 
+FREST->$ 
+T1'->$ 
+E'->$ 
+relation_Expr1->< mathExpr2 #relation_Expr.name="<";relation_Expr.name=mathExpr2.addr# 
+mathExpr2->mathExpr #mathExpr2.addr=mathExpr.addr;mathExpr2# 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->IDN #lookIDN(IDN);FREST.name=IDN.name# FREST #lookGroup(1,FREST.name);F.name=FREST.name# 
+FREST->[ CONST_INT_IDN ] #FREST1.name=",";FREST1.name=CONST_INT_IDN.name;# FREST1 #FREST.name=FREST1.name# 
+CONST_INT_IDN->IDN #LookIDN(IDN);CONST_INT_IDN.name=IDN.name# 
+FREST1->FREST #FREST1.name=FREST.name# 
+FREST->[ CONST_INT_IDN ] #FREST1.name=",";FREST1.name=CONST_INT_IDN.name;# FREST1 #FREST.name=FREST1.name# 
+CONST_INT_IDN->CONST_INT #CONST_INT_IDN.name=CONST_INT.name# 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+FREST1->FREST #FREST1.name=FREST.name# 
+FREST->[ CONST_INT_IDN ] #FREST1.name=",";FREST1.name=CONST_INT_IDN.name;# FREST1 #FREST.name=FREST1.name# 
+CONST_INT_IDN->CONST_INT #CONST_INT_IDN.name=CONST_INT.name# 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+FREST1->FREST #FREST1.name=FREST.name# 
+FREST->$ 
+T1'->$ 
+E'->$ 
+STMT->compound_STMT 
+compound_STMT->{ compound_STMT1 
+compound_STMT1->stmt_List } 
+stmt_List->STMT new_STMT 
+STMT->select_STMT #STMT.next=iteration_STMT.next# 
+select_STMT->if ( #newLabel(select_STMT.true);newLabel(select_STMT.false);newLabel(select_STMT.next)# logical_Expr #select_STMT.addr=logical_Expr.addr# ) #BUILD("if",select_STMT.addr,"goto",select_STMT.true);BUILD("","","goto",select_STMT.false);label(select_STMT.true)# STMT1 #BUILD("","","goto",select_STMT.next)# else #label(select_STMT.false)# STMT2 #label(select_STMT.next)# 
+logical_Expr->relation_Expr #logical_Expr.addr=relation_Expr.name# 
+relation_Expr->mathExpr #relation_Expr.name=mathExpr.addr# relation_Expr1 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->IDN #lookIDN(IDN);FREST.name=IDN.name# FREST #lookGroup(1,FREST.name);F.name=FREST.name# 
+FREST->$ 
+T1'->$ 
+E'->$ 
+relation_Expr1->< mathExpr2 #relation_Expr.name="<";relation_Expr.name=mathExpr2.addr# 
+mathExpr2->mathExpr #mathExpr2.addr=mathExpr.addr;mathExpr2# 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->IDN #lookIDN(IDN);FREST.name=IDN.name# FREST #lookGroup(1,FREST.name);F.name=FREST.name# 
+FREST->[ CONST_INT_IDN ] #FREST1.name=",";FREST1.name=CONST_INT_IDN.name;# FREST1 #FREST.name=FREST1.name# 
+CONST_INT_IDN->IDN #LookIDN(IDN);CONST_INT_IDN.name=IDN.name# 
+FREST1->FREST #FREST1.name=FREST.name# 
+FREST->$ 
+T1'->$ 
+E'->- Term #newTemp(mathExpr);gen(mathExpr,E',"-",Term);E'.name="NULL";E1'.name="NULL";E1'.name=mathExpr.addr# E1' #E'.name="NULL";E'.name=E1'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->math_CONST #F.name=math_CONST.name# 
+math_CONST->const_expr #math_CONST.name=const_expr.name# 
+const_expr->CONST_INT #const_expr.name=CONST_INT.name# 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+T1'->* F #newTemp(Term);gen(Term,T1',"*",F);T1'.name="NULL";T'.name="NULL";T'.name=Term.addr# T' #T1.name="NULL";T1'.name=T'.name# 
+F->math_CONST #F.name=math_CONST.name# 
+math_CONST->const_expr #math_CONST.name=const_expr.name# 
+const_expr->CONST_INT #const_expr.name=CONST_INT.name# 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+T'->T1' #T'.name=T1'.name# 
+T1'->$ 
+E1'->E' #E1'.name=E'.name# 
+E'->$ 
+STMT1->STMT #STMT1.name=STMT.name# 
+STMT->compound_STMT 
+compound_STMT->{ compound_STMT1 
+compound_STMT1->stmt_List } 
+stmt_List->STMT new_STMT 
+STMT->Expr_STMT 
+Expr_STMT->Assign_STMT 
+Assign_STMT->IDN #selectAssign.name=IDN.name;selectAssign.left=IDN.name# selectAssign #Assign_STMT.left=selectAssign.left;Assign_STMT.name=selectAssign.left# 
+selectAssign->= mathExpr #selectAssign.addr=mathExpr.addr;lookIDN(selectAssign);ASSIGN()# ; 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->math_CONST #F.name=math_CONST.name# 
+math_CONST->const_expr #math_CONST.name=const_expr.name# 
+const_expr->CONST_INT #const_expr.name=CONST_INT.name# 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+T1'->$ 
+E'->$ 
+new_STMT->$ 
+STMT2->STMT #STMT2.name=STMT.name# 
+STMT->Expr_STMT 
+Expr_STMT->Assign_STMT 
+Assign_STMT->IDN #selectAssign.name=IDN.name;selectAssign.left=IDN.name# selectAssign #Assign_STMT.left=selectAssign.left;Assign_STMT.name=selectAssign.left# 
+selectAssign->= mathExpr #selectAssign.addr=mathExpr.addr;lookIDN(selectAssign);ASSIGN()# ; 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->IDN #lookIDN(IDN);FREST.name=IDN.name# FREST #lookGroup(1,FREST.name);F.name=FREST.name# 
+FREST->$ 
+T1'->$ 
+E'->+ Term #newTemp(mathExpr);gen(mathExpr,E',"+",Term);E'.name="NULL";E1'.name="NULL";E1'.name=mathExpr.addr# E1' #E'.name="NULL";E'.name=E1'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->math_CONST #F.name=math_CONST.name# 
+math_CONST->const_expr #math_CONST.name=const_expr.name# 
+const_expr->CONST_INT #const_expr.name=CONST_INT.name# 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+T1'->$ 
+E1'->E' #E1'.name=E'.name# 
+E'->$ 
+new_STMT->$ 
+new_STMT->STMT new_STMT 
+STMT->Expr_STMT 
+Expr_STMT->Assign_STMT 
+Assign_STMT->IDN #selectAssign.name=IDN.name;selectAssign.left=IDN.name# selectAssign #Assign_STMT.left=selectAssign.left;Assign_STMT.name=selectAssign.left# 
+selectAssign->= mathExpr #selectAssign.addr=mathExpr.addr;lookIDN(selectAssign);ASSIGN()# ; 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->IDN #lookIDN(IDN);FREST.name=IDN.name# FREST #lookGroup(1,FREST.name);F.name=FREST.name# 
+FREST->[ CONST_INT_IDN ] #FREST1.name=",";FREST1.name=CONST_INT_IDN.name;# FREST1 #FREST.name=FREST1.name# 
+CONST_INT_IDN->CONST_INT #CONST_INT_IDN.name=CONST_INT.name# 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+FREST1->FREST #FREST1.name=FREST.name# 
+FREST->$ 
+T1'->$ 
+E'->$ 
+new_STMT->$ 
+functionList->Fun #BUILD("[",functionList.name,"Fun_END","]")# functionList 
+Fun->type #Fun.type=type.type# fun_head #functionList.name=fun_head.name;Fun.name=fun_head.name;Fun.params=fun_head.params;declareFunction(Fun)# FunRest 
+type->int #type.type="int"# 
+fun_head->IDN #fun_head.name=IDN.name# ( paramsDec #fun_head.params=paramsDec.params# 
+paramsDec->) 
+FunRest->Body 
+Body->{ dec_Stmt_List } 
+dec_Stmt_List->dec new_dec_Stmt stmt_List 
+dec->store_type #dec.store=store_type.type# type #dec.type=type.type# init_var #dec.name=init_var.name# ; #declareVar(dec)# 
+store_type->$ 
+type->int #type.type="int"# 
+init_var->common_dec #init_var.name=common_dec.name# special_dec 
+common_dec->IDN #common_dec.name=IDN.name# 
+special_dec->$ 
+new_dec_Stmt->dec new_dec_Stmt 
+dec->store_type #dec.store=store_type.type# type #dec.type=type.type# init_var #dec.name=init_var.name# ; #declareVar(dec)# 
+store_type->$ 
+type->int #type.type="int"# 
+init_var->common_dec #init_var.name=common_dec.name# special_dec 
+common_dec->IDN #common_dec.name=IDN.name# 
+special_dec->$ 
+new_dec_Stmt->dec new_dec_Stmt 
+dec->store_type #dec.store=store_type.type# type #dec.type=type.type# init_var #dec.name=init_var.name# ; #declareVar(dec)# 
+store_type->$ 
+type->int #type.type="int"# 
+init_var->common_dec #init_var.name=common_dec.name# special_dec 
+common_dec->IDN #common_dec.name=IDN.name# 
+special_dec->$ 
+new_dec_Stmt->dec new_dec_Stmt 
+dec->store_type #dec.store=store_type.type# type #dec.type=type.type# init_var #dec.name=init_var.name# ; #declareVar(dec)# 
+store_type->$ 
+type->int #type.type="int"# 
+init_var->common_dec #init_var.name=common_dec.name# special_dec 
+common_dec->IDN #common_dec.name=IDN.name# 
+special_dec->$ 
+new_dec_Stmt->dec new_dec_Stmt 
+dec->store_type #dec.store=store_type.type# type #dec.type=type.type# init_var #dec.name=init_var.name# ; #declareVar(dec)# 
+store_type->$ 
+type->float #type.type="float"# 
+init_var->common_dec #init_var.name=common_dec.name# special_dec 
+common_dec->IDN #common_dec.name=IDN.name# 
+special_dec->$ 
+new_dec_Stmt->dec new_dec_Stmt 
+dec->store_type #dec.store=store_type.type# type #dec.type=type.type# init_var #dec.name=init_var.name# ; #declareVar(dec)# 
+store_type->$ 
+type->int #type.type="int"# 
+init_var->common_dec #init_var.name=common_dec.name# special_dec 
+common_dec->IDN #common_dec.name=IDN.name# 
+special_dec->[ CONST_INT ] #init_var.name="*";init_var.name=CONST_INT.name# special_dec 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+special_dec->$ 
+new_dec_Stmt->$ 
+stmt_List->STMT new_STMT 
+STMT->Expr_STMT 
+Expr_STMT->Assign_STMT 
+Assign_STMT->IDN #selectAssign.name=IDN.name;selectAssign.left=IDN.name# selectAssign #Assign_STMT.left=selectAssign.left;Assign_STMT.name=selectAssign.left# 
+selectAssign->= mathExpr #selectAssign.addr=mathExpr.addr;lookIDN(selectAssign);ASSIGN()# ; 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->math_CONST #F.name=math_CONST.name# 
+math_CONST->const_expr #math_CONST.name=const_expr.name# 
+const_expr->CONST_FLOAT #const_expr.name=CONST_FLOAT.name# 
+T1'->$ 
+E'->$ 
+new_STMT->STMT new_STMT 
+STMT->Expr_STMT 
+Expr_STMT->Assign_STMT 
+Assign_STMT->IDN #selectAssign.name=IDN.name;selectAssign.left=IDN.name# selectAssign #Assign_STMT.left=selectAssign.left;Assign_STMT.name=selectAssign.left# 
+selectAssign->= mathExpr #selectAssign.addr=mathExpr.addr;lookIDN(selectAssign);ASSIGN()# ; 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->IDN #lookIDN(IDN);FREST.name=IDN.name# FREST #lookGroup(1,FREST.name);F.name=FREST.name# 
+FREST->$ 
+T1'->$ 
+E'->$ 
+new_STMT->STMT new_STMT 
+STMT->Expr_STMT 
+Expr_STMT->Assign_STMT 
+Assign_STMT->IDN #selectAssign.name=IDN.name;selectAssign.left=IDN.name# selectAssign #Assign_STMT.left=selectAssign.left;Assign_STMT.name=selectAssign.left# 
+selectAssign->= mathExpr #selectAssign.addr=mathExpr.addr;lookIDN(selectAssign);ASSIGN()# ; 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->( mathExpr ) #F.name=mathExpr.name# 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->IDN #lookIDN(IDN);FREST.name=IDN.name# FREST #lookGroup(1,FREST.name);F.name=FREST.name# 
+FREST->$ 
+T1'->$ 
+E'->- Term #newTemp(mathExpr);gen(mathExpr,E',"-",Term);E'.name="NULL";E1'.name="NULL";E1'.name=mathExpr.addr# E1' #E'.name="NULL";E'.name=E1'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->math_CONST #F.name=math_CONST.name# 
+math_CONST->const_expr #math_CONST.name=const_expr.name# 
+const_expr->CONST_INT #const_expr.name=CONST_INT.name# 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+T1'->$ 
+E1'->E' #E1'.name=E'.name# 
+E'->$ 
+T1'->* F #newTemp(Term);gen(Term,T1',"*",F);T1'.name="NULL";T'.name="NULL";T'.name=Term.addr# T' #T1.name="NULL";T1'.name=T'.name# 
+F->IDN #lookIDN(IDN);FREST.name=IDN.name# FREST #lookGroup(1,FREST.name);F.name=FREST.name# 
+FREST->$ 
+T'->T1' #T'.name=T1'.name# 
+T1'->$ 
+E'->+ Term #newTemp(mathExpr);gen(mathExpr,E',"+",Term);E'.name="NULL";E1'.name="NULL";E1'.name=mathExpr.addr# E1' #E'.name="NULL";E'.name=E1'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->math_CONST #F.name=math_CONST.name# 
+math_CONST->const_expr #math_CONST.name=const_expr.name# 
+const_expr->CONST_INT #const_expr.name=CONST_INT.name# 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+T1'->$ 
+E1'->E' #E1'.name=E'.name# 
+E'->$ 
+new_STMT->STMT new_STMT 
+STMT->Expr_STMT 
+Expr_STMT->Assign_STMT 
+Assign_STMT->IDN #selectAssign.name=IDN.name;selectAssign.left=IDN.name# selectAssign #Assign_STMT.left=selectAssign.left;Assign_STMT.name=selectAssign.left# 
+selectAssign->[ CONST_INT_IDN ] #selectAssign.name=",";selectAssign.name=CONST_INT_IDN.name;IDNREST.name=selectAssign.name# IDNREST #lookGroup(0,IDNREST.name);selectAssign.left="NULL";selectAssign.left=IDNREST.name# = mathExpr #selectAssign.addr=mathExpr.addr;ASSIGN()# ; 
+CONST_INT_IDN->CONST_INT #CONST_INT_IDN.name=CONST_INT.name# 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+IDNREST->$ 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->IDN #lookIDN(IDN);FREST.name=IDN.name# FREST #lookGroup(1,FREST.name);F.name=FREST.name# 
+FREST->$ 
+T1'->$ 
+E'->$ 
+new_STMT->STMT new_STMT 
+STMT->Expr_STMT 
+Expr_STMT->Assign_STMT 
+Assign_STMT->IDN #selectAssign.name=IDN.name;selectAssign.left=IDN.name# selectAssign #Assign_STMT.left=selectAssign.left;Assign_STMT.name=selectAssign.left# 
+selectAssign->[ CONST_INT_IDN ] #selectAssign.name=",";selectAssign.name=CONST_INT_IDN.name;IDNREST.name=selectAssign.name# IDNREST #lookGroup(0,IDNREST.name);selectAssign.left="NULL";selectAssign.left=IDNREST.name# = mathExpr #selectAssign.addr=mathExpr.addr;ASSIGN()# ; 
+CONST_INT_IDN->CONST_INT #CONST_INT_IDN.name=CONST_INT.name# 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+IDNREST->$ 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->IDN #lookIDN(IDN);FREST.name=IDN.name# FREST #lookGroup(1,FREST.name);F.name=FREST.name# 
+FREST->$ 
+T1'->$ 
+E'->$ 
+new_STMT->STMT new_STMT 
+STMT->Expr_STMT 
+Expr_STMT->Assign_STMT 
+Assign_STMT->IDN #selectAssign.name=IDN.name;selectAssign.left=IDN.name# selectAssign #Assign_STMT.left=selectAssign.left;Assign_STMT.name=selectAssign.left# 
+selectAssign->[ CONST_INT_IDN ] #selectAssign.name=",";selectAssign.name=CONST_INT_IDN.name;IDNREST.name=selectAssign.name# IDNREST #lookGroup(0,IDNREST.name);selectAssign.left="NULL";selectAssign.left=IDNREST.name# = mathExpr #selectAssign.addr=mathExpr.addr;ASSIGN()# ; 
+CONST_INT_IDN->IDN #LookIDN(IDN);CONST_INT_IDN.name=IDN.name# 
+IDNREST->$ 
+mathExpr->Term #E'.name="NULL";E'.name=Term.name# E' #mathExpr.name=E'.name;mathExpr.addr="NULL";mathExpr.addr=E'.name# 
+Term->F #T1'.name=F.name# T1' #Term.name=T1'.name# 
+F->math_CONST #F.name=math_CONST.name# 
+math_CONST->const_expr #math_CONST.name=const_expr.name# 
+const_expr->CONST_INT #const_expr.name=CONST_INT.name# 
+CONST_INT->CONST_INT10 #CONST_INT.name=CONST_INT10.name# 
+T1'->$ 
+E'->$ 
+new_STMT->$ 
+functionList->$ 

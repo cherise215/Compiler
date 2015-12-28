@@ -1,0 +1,11 @@
+program->functionList 
+functionList->Fun functionList 
+Fun->type #Fun.type=type.type# fun_head #Fun.name=fun_head.name;Fun.params=fun_head.params;declareFunction(Fun.type,Fun.name,Fun.params)# FunRest 
+type->int #type.type="int"# 
+fun_head->IDN #fun_head.name=IDN.name# ( paramsDec #fun_head.params=paramsDec.params# 
+paramsDec->) #paramsDec.params=""# 
+FunRest->Body 
+Body->{ dec_Stmt_List } 
+dec_Stmt_List->stmt_List 
+stmt_List->$ 
+functionList->$ 

@@ -1,0 +1,159 @@
+﻿program->Fun program1
+program1->Fun program1
+program1->$
+Fun->type dec_head Fun1
+Fun->void dec_head Fun1
+Fun1->Body
+Fun1->;
+type->int 
+type->float 
+type->char
+type->long type1
+type1->int
+type1->double
+type1->$
+type->short type2
+type2->int
+type2->$
+type->double
+type->unsigned type
+pointer->* pointer1
+pointer1->* pointer1
+pointer1->$
+var->* var'
+var->var'
+var'->IDN varRest
+varRest->[ ] varRest
+varRest->$
+store_type->auto
+store_type->register
+store_type->const
+store_type->extern
+store_type->typedef 
+store_type->$
+dec_head->pointer IDN ( dec_head_Rest
+dec_head->IDN ( dec_head_Rest
+dec_head_Rest->)
+dec_head_Rest->void )
+dec_head_Rest->param_list )
+param_list ->param new_param
+param->type var 
+new_param->, param new_param
+new_param->$
+Body->{ dec_Stmt_List  }
+dec_Stmt_List->stmt_List
+stmt_List->$
+dec_Stmt_List->dec new_dec_Stmt stmt_List
+new_dec_Stmt->dec new_dec_Stmt
+new_dec_Stmt->$
+dec->store_type type init_var new_dec ;
+new_dec->, init_var new_dec
+new_dec->$
+init_var->commom_dec special_dec
+commom_dec->pointer IDN
+commom_dec->IDN
+special_dec->= assigment_Expr
+special_dec->[ group_dec
+special_dec->$
+group_dec->] group_def 
+group_dec->CONST_INT ] group_def
+group_def->[ group_dec
+group_def->=  group_def1
+group_def->$
+init_var_group_declare_define->$
+group_def1->{ const_explist }
+group_def1->CONST_CHAR*
+stmt_List->STMT new_STMT
+new_STMT->STMT new_STMT
+new_STMT->$
+compound_STMT->{ compound_STMT1 
+compound_STMT1->stmt_List }
+compound_STMT1->}
+const_explist->const_expr const_explist1
+const_explist1->, const_expr const_explist1
+const_explist1->$
+const_expr->CONST_INT
+const_expr->CONST_FLOAT
+const_expr->CONST_CHAR
+const_expr->CONST_CHAR*
+STMT->compound_STMT
+STMT->Expr_STMT
+STMT->selection_STMT
+STMT->iteration_STMT
+STMT->jump_STMT
+Expr_STMT->;
+Expr_STMT->assigment_Expr Expr_STMT1 ;
+Expr_STMT1->= assigment_Expr
+Expr_STMT1->$
+Expr_STMT1->fun_return
+fun_return->( func_param
+func_param->)
+func_param->func_param1 )
+func_param1->assigment_Expr func_param2
+func_param2->, assigment_Expr func_param2
+func_param2->$
+selection_STMT->if ( logical_Expr ) STMT selection_STMT1
+selection_STMT1->else stmt_List
+selection_STMT1->$
+selection_STMT->switch ( IDN ) { switch_STMT0 switch_STMT2 }
+switch_STMT0->case switch_STMT1
+switch_STMT1->CONST_INT : stmt_List switch_STMT0
+switch_STMT1->CONST_CHAR : stmt_List switch_STMT0
+switch_STMT0->$
+switch_STMT2->default : stmt_List
+switch_STMT2->$
+iteration_STMT->while ( logical_Expr ) stmt_List
+iteration_STMT->for ( Expr_STMT logical_Expr ; assigment_Expr ) stmt_List
+iteration_STMT->do { stmt_List } while ( logical_Expr ) ;
+jump_STMT->continue ;
+jump_STMT->break ;
+jump_STMT->return jump_STMT1
+jump_STMT1->;
+jump_STMT1->assigment_Expr ;
+assigment_Expr->mathExpr
+mathExpr->T E'
+E'->+ T E'
+E'->- T E'
+E'->$
+T->F T'
+T'->SECOND_Math_OP F T'
+T'->$
+F->( assigment_Expr )
+F->IDN FREST
+F->math_CONST FREST
+FREST->++
+FREST->--
+FREST->$
+FREST->[ IN ]
+FREST->fun_return
+IN->assigment_Expr
+IN->$
+math_CONST->const_expr
+CONST_INT->CONST_INT16
+CONST_INT->CONST_INT8
+CONST_INT->CONST_INT10
+F->First_Math_OP IDN FREST
+SECOND_Math_OP->%
+SECOND_Math_OP->*
+SECOND_Math_OP->/
+Third_Math_OP->+
+Third_Math_OP->-
+First_Math_OP->++
+First_Math_OP->--
+First_Math_OP->!
+relation_Expr->assigment_Expr relation_Expr1 
+relation_Expr1->log_op assigment_Expr
+relation_Expr1->$
+log_op-><
+log_op->>
+log_op-><=
+log_op->>=
+log_op->==
+log_op->!=
+logical_Expr->! ( relation_Expr ) logical_Expr1
+logical_Expr->( relation_Expr ) logical_Expr1
+logical_Expr1->and_or logical_Expr 
+logical_Expr1->$
+logical_Expr->relation_Expr
+and_or->&&
+and_or->||
